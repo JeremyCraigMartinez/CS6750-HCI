@@ -1,0 +1,15 @@
+build.sh
+custom-style.tex
+enumerate-refs.py
+figs/
+main-style.tex
+main.aux
+main.bak.tex
+main.bbl
+main.blg
+main.log
+main.out
+publish.sh
+references.bib
+sample.tex
+sample/
