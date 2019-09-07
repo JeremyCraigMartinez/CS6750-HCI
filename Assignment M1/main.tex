@@ -12,15 +12,15 @@
 % \input{<file_name>.tex}
 
 \begin{abstract}
-I will be focusing on a websites navigation bar. The nav bar is usually the main call to action when visiting a homepage of a web application, and provides context for what actions are available. I will compare navigability between desktop/mobile versions of a website as well.
+I will be focusing on a website’s navigation bar. The nav bar is usually the main call to action when visiting a homepage of a web application and provides context for what actions are available. I will compare navigability between desktop/mobile versions of a website as well.
 \end{abstract}
 
 \section{Problem Space}
-To define the problem space, we must enumerate details associated with what this means. Listing these out and explaining one-by-one each of these details helps fully capture the scope of the space we're looking at. The problem at hand is finding information on a local business. The medium for solving this problem is a website for the local business (hair salon). We will narrow our focus of this entire application to the navigation bar, and attempt to optimize the user experience of this one aspect.
+To define the problem space, we must enumerate details associated with what this means. Listing these out and explaining one-by-one each of these details helps fully capture the scope of the space we're looking at. The problem at hand is finding information on a local business. The medium for solving this problem is a website for the local business (hair salon). We will narrow our focus of this entire application to the navigation bar and attempt to optimize the user experience of this one aspect.
 
 \begin{itemize}
 \item
-  \textbf{Where is the task ocurring?} At home, on the bus, in a restaurant, anywhere we have access to a browser, desktop or mobile
+  \textbf{Where is the task occurring?} At home, on the bus, in a restaurant, anywhere we have access to a browser, desktop or mobile
 \item
   \textbf{What else is going on?} The user may be switching between multiple tabs in their browser, using their smartphone while performing some other task, etc.
 \item
@@ -34,7 +34,7 @@ Our problem space can be analyzed at the level of the user's finger tapping the 
 We can also tweak this scenario so that our user is accessing this website in a similar setting, but on their laptop (desktop browser). All of these degrees of focus on the application are relevant, and we'll keep these, along with many others, in mind when conducting needfinding.
 
 \section{User Types}
-The intended user for this application are adults in general. However, the current customer base will be the heavy focus of whom this experience will be designed for, which includes men and women ages 30-60. We anticipate the majority of the target audience to be older than millennials.
+The intended user for this application is adults in general. However, the current customer base will be the heavy focus of whom this experience will be designed for, which includes men and women ages 30-60. We anticipate the majority of the target audience to be older than millennials.
 
 When evaluating the intended audience, the following is taken into account
 
@@ -44,7 +44,7 @@ When evaluating the intended audience, the following is taken into account
 \item
   \textbf{Their level of expertise} will be assumed to be not very technical. This audience will be in the grey area between a millennial and geriatric. We will assume for this reason that the user does not have a strong grasp on the differences between types of browsers, versions of browsers, or experiences between mobile vs desktop browsers. The UI should be styled in such a way that the look and feel is familiar, yet clearly geared to be optimized on the platform at hand.
 \item
-  \textbf{Their motivation for engaging in the task} will not be singular. The number of reasons one might visit a hair salons website could be for general salon information, hours of operation, salon team members, products/services they offer, schedule an appointment, contact information. We can try to anticpate our users needs, however, we must assume they have any one of these intentions. Therefore, having an intuitive navigation inside the application is crucial to naturally enabling the user to accomplish the task they came to do without any friction.
+  \textbf{Their motivation for engaging in the task} will not be singular. The number of reasons one might visit a hair salons website could be for general salon information, hours of operation, salon team members, products/services they offer, schedule an appointment, contact information. We can try to anticipate our users needs; however, we must assume they have any one of these intentions. Therefore, having an intuitive navigation inside the application is crucial to naturally enabling the user to accomplish the task they came to do without any friction.
 \end{itemize}
 
 \section{Needfinding bias pitfalls}
@@ -53,7 +53,7 @@ In approaching needfinding, a heavy emphasis on avoiding common pitfalls that le
 
 \begin{itemize}
 \item
-  \textbf{Confirmation bias} involves confirming preconcieved notions in your hypothesis. This can be avoided by looking for signs the original hypothesis is incorrect, testing data empirically, and involving multiple people in the needfinding process.
+  \textbf{Confirmation bias} involves confirming preconceived notions in your hypothesis. This can be avoided by looking for signs the original hypothesis is incorrect, testing data empirically, and involving multiple people in the needfinding process.
 \item
   \textbf{Observer bias} can create bias around what we want the user to do or assist them in accomplishing a task. This can also occur in phrasing survey questions in a bias manner. This can be avoided by separating motives and experiments, scripting interactions with users, and using a third party to reviewing interview scripts and surveys.
 \item
@@ -64,26 +64,86 @@ In approaching needfinding, a heavy emphasis on avoiding common pitfalls that le
   \textbf{Recall bias} highlights the fact the users are not great at recalling exactly what they did, why they did, or how they felt while doing something. This can be reduced by having users think out loud during activities or recording interview/survey data during the experiment itself.
 \end{itemize}
 
+\section{Data inventory}
+
+\begin{enumerate}
+\item
+  Who are the users?
+\item
+  Where are the users?
+\item
+  What is the context of the task?
+\item
+  What are their goals?
+\item
+  What do they need?
+\item
+  What are their tasks?
+\item
+  What are their subtasks?
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.4]{figs/design-lifecycle}
+  \caption{Design lifecycle}
+  \label{fig::1}
+\end{figure}
 
 \section{Think aloud}
-Lay out a clear plan for that needfinding exercise. What will participants do? What will you ask them while or after they do it?
 
-Connect the needfinding exercise to items from the data inventory
+This needfinding phase can take place on existing interfaces (which will overlap with the next needfinding strategy: \emph{Analysis of existing user interfaces}) as well as different prototypes of our own design. The approach to this needfinding strategy will therefore be broken out into two parts: analyzing existing user interfaces and analyzing our own prototypes.
 
-Specifically outline the potential biases you might encounter during this needfinding exercise. What concrete steps will you take to limit their impact? Reference the task list above in \textbf{Needfinding bias pitfalls}
+Subjects will be asked to think aloud while using other interfaces in an attempt to see their cognitive process and how they digest different components in the UI. We will pick the users brain both while they are doing something and after they have done something. Note, that it is necessary to avoid prompting the user for impressions prior to taking an action, as this can skew their approach.
+
+Specific questions that will be asked during this exercise case vary with the prototype implementation, however, a few examples are provided below to provide a general picture:
+
+\begin{itemize}
+\item
+  What is your main objective upon landing on this [welcome] page?
+\item
+  What is your initial impression of this [welcome] page? Too much text, not enough text? Is the overall design inviting?
+\item
+  Is there a clear call to action? Is it clear how to achieve your initial objective?
+\item
+  How clear is it where the navigation tool to the website is?
+\item
+  Etc.
+\end{itemize}
+
+\subsection{Existing user interfaces}
+Existing user interfaces can offer a lot of information for us to build upon. This portion of needfinding will combine both analysis of existing user interfaces, as well as, think aloud strategies. This specific sub-section of think aloud needfinding will occur in the initial needfinding phase from the design lifecycle (from Figure 1: Design lifecycle).
+
+\subsection{Our own prototypes}
+Our own prototypes will be applicable for this type of needfinding after the initial prototyping phase (from Figure 1: Design lifecycle). This is because it will have to occur after we actually have some prototypes to work with.
+
+\subsection{Data inventory}
+As meta data, we will record who our user is (1. Who are the users?) (i.e. what demographic do they fall into). We will conduct our research for this exercise (likely) in two different locations (2. Where are the users?) mobile browsers and desktop browsers. The rest of our questioning will revolve around what their goals are, and how intuitive it is to accomplish these in what tasks/subtasks.
+
+\subsection{Potential bias}
+Bias the is often encountered during think aloud exercises is that it forces the user to focus on their metacognition as they conduct the activity. This changes the organic experience and can potentially not reflect how many users interact with an interface. This will be taken into consideration when evaluating certain cognitive tasks. Also, whenever possible, the user will be asked to reflect (immediately) on a task as opposed to during the task. This will also help reduce recall bias.
 
 \section{Analysis of existing user interfaces}
-Lay out a clear plan for that needfinding exercise. What interfaces will you look at? Where will you find them?
+Lay out a clear plan for that needfinding exercise.
 
-Connect the needfinding exercise to items from the data inventory
+What interfaces will you look at?
 
+Where will you find them?
+
+\subsection{Data inventory}
+Info on data inventory...
+
+\subsection{Potential bias}
 Specifically outline the potential biases you might encounter during this needfinding exercise. What concrete steps will you take to limit their impact? Reference the task list above in \textbf{Needfinding bias pitfalls}
 
 \section{Surveys}
-Lay out a clear plan for that needfinding exercise. What will you ask? Who will you send the survey to?
+Lay out a clear plan for that needfinding exercise.
 
-Tips on conducting/writing the survey:
+What will you ask?
 
+Who will you send the survey to?
+
+\subsection{Tips on conducting/writing the survey}
 - Less is more
 - Beware of bias
 - Tie them to the inventory
@@ -93,8 +153,10 @@ Tips on conducting/writing the survey:
 
 Make sure to also be clear, concise, specific, expressive, unbiased, usable
 
-Connect the needfinding exercise to items from the data inventory
+\subsection{Data inventory}
+Info on data inventory...
 
+\subsection{Potential bias}
 Specifically outline the potential biases you might encounter during this needfinding exercise. What concrete steps will you take to limit their impact? Reference the task list above in \textbf{Needfinding bias pitfalls}
 
 \end{document}
