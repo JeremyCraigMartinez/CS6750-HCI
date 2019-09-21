@@ -19,33 +19,55 @@ I will be focusing on a website’s navigation bar. The nav bar is usually the m
 \section{Needfinding - Think Aloud}
 
 \paragraph{Summarizing the results}
-Summarize the results of the think aloud needfinding exercise here.
-Reference appendix for script that was read to users on their privacy:
-Reference appendix here as well where raw notes of the users perception of the interface is transcribed.
+The interfaces studied in this needfinding exercise are listed below:
 
-\paragraph{Summarizing the takeaways}
-Summarize the takeaways from this particular plan
-
-\paragraph{Avoiding bias}
-Bias the is often encountered during think aloud exercises is that it forces the user to focus on their metacognition as they conduct the activity. This changes the organic experience and can potentially not reflect how many users interact with an interface. This will be taken into consideration when evaluating certain cognitive tasks. Also, whenever possible, the user will be asked to reflect (immediately) on a task as opposed to during the task. This will also help reduce recall bias.
-
-\begin{itemize}
+\begin{enumerate}
 \item
-  \textbf{Confirmation bias} involves confirming preconceived notions in your hypothesis. This can be avoided by looking for signs the original hypothesis is incorrect, testing data empirically, and involving multiple people in the needfinding process.
+  \textbf{Spoiled Spa and Salon} - desktop browser - a neighborhood hair salon and spa
 \item
-  \textbf{Observer bias} can create bias around what we want the user to do or assist them in accomplishing a task. This can also occur in phrasing survey questions in a bias manner. This can be avoided by separating motives and experiments, scripting interactions with users, and using a third party to reviewing interview scripts and surveys.
-\end{itemize}
+  \textbf{Firefly Atelier Hair Salon} - mobile browser - a neighborhood hair salon
+\item
+  \textbf{Twitch.tv} - desktop browser - an online video game streaming platform
+\item
+  \textbf{Groupon} - mobile app - an online coupon service (mobile app studied instead of mobile browser)
+\item
+  \textbf{YouTube} - mobile app - an online video hosting service (mobile app studied instead of mobile browser)
+\end{enumerate}
+
+Most users found the use of symbols very effective and were able to identify tasks based on these. Users commented on when and where screen real estate was used effectively, or they felt that it was wasted. The Firefly Atelier Hair Salon was an example of this in that they used too much text, had no clear CTA's on their homepage (and even had a dismissable notification that made the app difficult to use). Spoiled Spa and Salon was the opposite of this in that their home page surfaces buttons to steer you in a clear path immediately. Both salons mobile browser applications leveraged the \link{https://fontawesome.com/icons/bars}{hamburger} in the upper left, which was recognizable to everyone given the web standard.
 
 \clearpage
 
+The search bar seemed to always dominate the attention of the user in the nav. Though this functionality was used whenever it was available, it did dwarf other aspects of the nav bar. Every user found the doulbe nav bar from YouTube very useful and easy to use given their thumb placement. This is interesting because using two navs ensure your user always has direct access to the action they want to accomplish (given this only has a limit number of tasks).
+
+When using so much screen real estate for the nav, one must be efficient in using the main section of their application. Leveraging well known icons, and using visuals over text to communicate whenever possible it key. All users seemed to be okay with seeing text on the "who we are" section of Firefly's website, since they had clicked to a section where they would expect a lot of text.
+
+The script of some of the focal points of the think aloud exercises can be found in Appendix B. The raw notes of the think aloud exercises can be found in Appendix C.
+
+\paragraph{Summarizing the takeaways}
 \begin{itemize}
-\item
-  \textbf{Social desirability bias} occurs when a participant feels obligated to give positive feedback. An easy way to avoid this is to hide the true motive of a question in the survey and recording objective data
-\item
-  \textbf{Voluntary response bias} addresses the fact that strongly opinionated users tend to give voluntary feedback. To avoid this, do not expose the user to survey content prematurely.
-\item
-  \textbf{Recall bias} highlights the fact the users are not great at recalling exactly what they did, why they did, or how they felt while doing something. This can be reduced by having users think out loud during activities or recording interview/survey data during the experiment itself.
+  \item
+    \textbf{Avoid text}. It is vital to keep the text to a minimum whenever possible, use images/icons to convey meaning. Stay consistent with these representations
+  \item
+    \textbf{Top & bottom nav}. Surface a nav on both the top and the bottom (fixed on the screen).
+  \item
+    \textbf{Dismissable items}. Avoid dismissable pop-ups whenever possible.
+  \item
+    \textbf{Search is first}. Search is good, but overpowering and demanding of the users attention. Include this, but de-emphasized in some way.
+  \item
+    \textbf{Landing page}. Show calls to actions immediately. The nav may not be enough, the user came here for a reason, try to guess what that is and put it in front of their face quickly!
+  \item
+    \textbf{Categorize}. Categorize everything in an intuitive way, and stay consistent with this. The user will subconciously pick up on this structure and teach themselves to navigate the app based off of it.
+  \item
+    \textbf{Emphasize more common actions}. If your nav requires too much, do what Twitch does. Surface the most common actions to appease the many, offer a "more" option with a subnav for the more technical.
 \end{itemize}
+
+\paragraph{Avoiding bias}
+In order to avoid \textbf{recall bias}, the user was asked to reflect on actions as often as possible, rather than pre-emptively asked to explain why they're performing an action. Doing the latter can sometimes change their metacognitive process to give them more awareness than they normally would. Also, we used a wide array of application types in order to prevent tunnel vision on one type of feedback. Careful concern was given to avoid assisting the user in any way to avoid \textbf{observer bias}.
+
+To avoid potential \textbf{confirmation bias} of only analyzing a small subset of hair salon web page layouts, I will conduct a think aloud exercise on two extra interfaces (from a different type of industry) for desktop application and two different mobile apps (not mobile browser) to compare/contrast how these different platforms compare.
+
+Finally, since these user interfaces were not developed by myself, the user had no incentive to compliment them, thus avoiding \textbf{social desireability bias}.
 
 
 \section{Existing user interfaces}
@@ -66,7 +88,7 @@ For this needfinding exercise, I will focus on two hair salons in the Vancouver,
 \subsection{Spoiled Spa and Salon}
 
 \paragraph{Content & landing page}
-for this salon serves a nav at the upper-right part of the screen for desktop and a hamburger at the upper-left for tablet/mobile. The tabs include services, gift certificates, products, specials, policies, and appointment bookings. The content of the page below contains contact information, calls to action (buttons) on their most common services, and a upsell for gift card certificates..
+for this salon serves a nav at the upper-right part of the screen for desktop and a \link{https://fontawesome.com/icons/bars}{hamburger} at the upper-left for tablet/mobile. The tabs include services, gift certificates, products, specials, policies, and appointment bookings. The content of the page below contains contact information, calls to action (buttons) on their most common services, and a upsell for gift card certificates..
 
 \paragraph{Calls to action}
 for the services provided all have consistent layouts. They list out their services, tiers of each services, and prices associated with these services.
@@ -77,7 +99,7 @@ The services tab from the nav bar has a sub nav matching the services on the lan
 \subsection{Firefly Atelier Hair Salon}
 
 \paragraph{Content & landing page}
-for this salon serves a nav at the upper-right part of the screen for desktop and a hamburger at the upper-left for tablet/mobile. The tabs include home, our team, products, services, contact, promotional and events. The content of the page below contains a video on loop showing the salon on an average day giving insight to their day-to-day operations. As you scroll down, the landing page (home page) also has three calls to action (in line with the nav tabs) for services, meet our team, and contact.
+for this salon serves a nav at the upper-right part of the screen for desktop and a \link{https://fontawesome.com/icons/bars}{hamburger} at the upper-left for tablet/mobile. The tabs include home, our team, products, services, contact, promotional and events. The content of the page below contains a video on loop showing the salon on an average day giving insight to their day-to-day operations. As you scroll down, the landing page (home page) also has three calls to action (in line with the nav tabs) for services, meet our team, and contact.
 
 \paragraph{Calls to action}
 on the video of the salon there is a downward arrow indicating to check out the content below. They have a short description. The three calls to action map to the three tab in the nav bar.
@@ -104,20 +126,6 @@ The salon interfaces are useful becasue they give us a persepctive of what this 
 Tunnel vision can occur during this needfinding exercise because one can focus too much on replicating their competitors. While I believe the competitors approach contains useful parts, we will try to only retain the content they contain, and approach the navigation aspect from an entirely new perspective. The goal is to get the user to feel the most comfortable in ther interface. We are going to pay extra attention to not restrict ourselves to this style of navigation implementation if a better one exists.
 
 
-\begin{itemize}
-\item
-  \textbf{Confirmation bias} involves confirming preconceived notions in your hypothesis. This can be avoided by looking for signs the original hypothesis is incorrect, testing data empirically, and involving multiple people in the needfinding process.
-\item
-  \textbf{Observer bias} can create bias around what we want the user to do or assist them in accomplishing a task. This can also occur in phrasing survey questions in a bias manner. This can be avoided by separating motives and experiments, scripting interactions with users, and using a third party to reviewing interview scripts and surveys.
-\item
-  \textbf{Social desirability bias} occurs when a participant feels obligated to give positive feedback. An easy way to avoid this is to hide the true motive of a question in the survey and recording objective data
-\item
-  \textbf{Voluntary response bias} addresses the fact that strongly opinionated users tend to give voluntary feedback. To avoid this, do not expose the user to survey content prematurely.
-\item
-  \textbf{Recall bias} highlights the fact the users are not great at recalling exactly what they did, why they did, or how they felt while doing something. This can be reduced by having users think out loud during activities or recording interview/survey data during the experiment itself.
-\end{itemize}
-
-
 \section{Needfinding - Survey}
 
 \paragraph{Summarizing the results}
@@ -131,19 +139,6 @@ Summarize the takeaways from this particular plan
 
 \paragraph{Avoiding bias}
 To avoid bias, we will ensure this survey is anonymized and that the user is aware of that so that they answer honestly. Having this survey online can ensure we distribute it to a large audience. We will put emphasis on the focus points listed above.
-
-\begin{itemize}
-\item
-  \textbf{Confirmation bias} involves confirming preconceived notions in your hypothesis. This can be avoided by looking for signs the original hypothesis is incorrect, testing data empirically, and involving multiple people in the needfinding process.
-\item
-  \textbf{Observer bias} can create bias around what we want the user to do or assist them in accomplishing a task. This can also occur in phrasing survey questions in a bias manner. This can be avoided by separating motives and experiments, scripting interactions with users, and using a third party to reviewing interview scripts and surveys.
-\item
-  \textbf{Social desirability bias} occurs when a participant feels obligated to give positive feedback. An easy way to avoid this is to hide the true motive of a question in the survey and recording objective data
-\item
-  \textbf{Voluntary response bias} addresses the fact that strongly opinionated users tend to give voluntary feedback. To avoid this, do not expose the user to survey content prematurely.
-\item
-  \textbf{Recall bias} highlights the fact the users are not great at recalling exactly what they did, why they did, or how they felt while doing something. This can be reduced by having users think out loud during activities or recording interview/survey data during the experiment itself.
-\end{itemize}
 
 
 \section{Data inventory}
@@ -217,28 +212,120 @@ Briefly outline the next iteration of needfinding in which you might engage base
 \end{itemize}
 
 
-\section{Appendix B: Think Aloud Notes}
-Add notes here
+\section{Appendix B: Think Aloud Script}
+Prior to this script, the user is sat down (with me) with the interface in front of them (mobile/desktop - omitting tablet for now). The user is instructed to articulate their though process every inch of the way in attempting to accomplish their task. Tasks between mobile/desktop will be the same.
+
+\begin{itemize}
+\item
+  What is your initial impression of this [welcome] page? Too much text, not enough text? Is the overall design inviting?
+\item
+  What is your main objective upon landing on this [welcome] page?
+\item
+  Is there a clear call to action? Is it clear how to achieve your initial objective?
+\item
+  How clear is it where the navigation tool to the website is?
+\end{itemize}
 
 
-\section{Appendix C: Survey}
+\section{Appendix C: Think Aloud Notes}
+ Both participants were asked to use all five of these applications each with different tasks in mind. In an attempt to have a controlled experiment, all of these tasks are relatively similar - use the navigation bar to complete some task.
+
+\subsection{Participant A}
+
 \begin{enumerate}
 \item
-  What are you looking for in a hair salon/barber?
+  \textbf{Spoiled Spa and Salon} - desktop browser - new client attempting to discover more information about this hair salon
+  \begin{enumerate}
+  \item
+    Likes the fact that everything is available, book now available.
+  \item
+    The immediate calls to action were good. Surfaces immediately the ability to accomplish what you came here to do.
+  \item
+    Missing the "who we are" section. This is necessary to humanize the business.
+  \item
+    Objectives seemed to revolve around pricing, booking, location information.
+  \item
+    Nav bar was obvious and easy to find. Using industry standard symbol made finding it intuitive.
+  \end{enumerate}
 \item
-  What helps one salon/barber stand out from another? What improves your experience? What encourages repeat business?
+  \textbf{Firefly Atelier Hair Salon} - mobile browser - returning client attempting to find contact info/store hours/stylist information
+  \begin{enumerate}
+  \item
+    Bare - poor design with screen real estate. Notficiations that prompt user to book appointment make site nearly unusable. Forces you to dismiss
+  \item
+    Scrolling a lot to find the content the user wants. Too much text.
+  \item
+    No clear CTA on screen until you scroll. User assumes they must find the nav and the CTA is there (when actually it is also on the home page if you scroll)
+  \item
+    Hours of operation is located at bottom in footer. Would make more sense to be on page with location (or possibly both).
+  \item
+    Nav bar is consistent with industry standard. \link{https://fontawesome.com/icons/bars}{hamburger} in upper left corner.
+  \end{enumerate}
 \item
-  When looking for a new salon/barber, how do you decide? Where do you look?
+  \textbf{Twitch.tv} - desktop browser - attempting to find a stream from a specific user
+  \begin{enumerate}
+  \item
+    First impression - main CTA is the search bar in the top-middle of the app. Likes suggestions/auto complete, helps with odd spelled searches
+  \item
+    A lot going on in UI, lots of options, categorized really well.
+  \item
+    Categorization is consistent and everywhere, making sifting through the content simple. Content is icon/image/visual based evverywhere, not much text.
+  \item
+    In looking for stream from user, clear CTA with search bar.
+  \item
+    On user page, the CTA to accomplish their goal is obvious. The UI satisfies the most common tasks first/foremost. More technical functionality still exists, just emphasized less.
+  \item
+    Nav bar is in upper left, clear and obvious how to get what the user wants out of it. Easy to recognize the "..." symbol.
+  \end{enumerate}
 \item
-  Imagine you land on the webpage of a potential new salon/barber. What content would you expect to see?
+  \textbf{Groupon} - mobile application - find a coupon for a movie theater
+  \begin{enumerate}
+  \item
+    Layout out well - immediately drawn to the search bar as the main CTA. Assistance for search bar is nice.
+  \item
+    Screen real estate is not used well. The content being emphasized is not relevant to user.
+  \item
+    Objectives all revolved around finding coupons for business. Using main CTA (search bar), the search bar had several good features - location. Search results are too broad and confusing
+  \item
+    On product page, CTA is very clear and fixed on the screen (purchase). User finds this useful that it is always available.
+  \item
+    Nav at times can be difficult to find. On some pages, nav disappears entirely in lieu of a back button "<" in upper left corner.
+  \end{enumerate}
+\item
+  \textbf{YouTube} - mobile application - Send feedback on an issue you had with the product
+  \begin{enumerate}
+  \item
+    First impression, the UI is centered around videos - solving the most common objective of the product.
+  \item
+    CTA to accomlish task is not too clear. User had to click around to find a button in the nav that satisfied this (user profile picture in upper right).
+  \item
+    User is okay with this gap in knowledge of the UI since their task is uncommon.
+  \item
+    Nav is partially clear, very available. The placement is convenient to how the user holds their phone.
+  \item
+    Likes split nav, ensure his options are always available. Especially on the home page.
+  \end{enumerate}
+\end{enumerate}
+
+
+\section{Appendix D: Survey}
+\begin{enumerate}
+\item
+  What are you looking for in a hair salon?
+\item
+  What helps one salon stand out from another? What improves your experience? What encourages repeat business?
+\item
+  When looking for a new salon, how do you decide? Where do you look?
+\item
+  Imagine you land on the webpage of a potential new salon. What content would you expect to see?
 \item
   As a new customer, would you visit the webpage with one objective, or multiple? If multiple, which would you expect to see first?
 \item
-  Imagine you are visiting the webpage of a salon/barber you have been a customer of for a while. What content would you expect to see?
+  Imagine you are visiting the webpage of a salon you have been a customer of for a while. What content would you expect to see?
 \item
   As a repeat customer, would you visit the webpage with one objective, or multiple? If multiple, which would you expect to see first?
 \item
-  What else would you want to get out of the website of a salon/barber as a repeat customer or new customer?
+  What else would you want to get out of the website of a salon as a repeat customer or new customer?
 \item
   Would you be more likely to visit this webpage on your phone, tablet, or desktop?
 \item
@@ -246,8 +333,105 @@ Add notes here
 \end{enumerate}
 
 
-\section{Appendix D: Survey Analysis}
-The survey analysis
+\section{Appendix E: Survey Analysis}
+
+Survey can be found on \link{https://www.surveymonkey.com/r/G83YK3V}{Survey Monkey}.
+
+\begin{enumerate}
+\item
+  What are you looking for in a hair salon?
+  \begin{itemize}
+  \item
+    Cleanliness, friendliness, experience, relaxing, inviting, professionalism
+  \item
+    Price, customer service, location
+  \end{itemize}
+\item
+  What helps one salon stand out from another? What improves your experience? What encourages repeat business?
+  \begin{itemize}
+  \item
+    Rapport, listening to their ideas, customer service, respect, contact (appt confirmation). Making felt like you are not rushed.
+  \item
+    Skill level, quality hair cuts/styling/coloring
+  \end{itemize}
+\item
+  When looking for a new salon, how do you decide? Where do you look?
+  \begin{itemize}
+  \item
+    Location, online, reviews (Google, Yelp), suggestions from friends/family
+  \item
+    Social media presence. Pictures on Facebook and Instagram.
+  \end{itemize}
+\item
+  Imagine you land on the webpage of a potential new salon. What content would you expect to see?
+  \begin{itemize}
+  \item
+    Portfolio, types of products/services, bio of stylists, prices, online booking, free consultation, blogs, hours, contact info
+  \item
+    Business history
+  \end{itemize}
+\item
+  As a new customer, would you visit the webpage with one objective, or multiple? If multiple, which would you expect to see first?
+  \begin{itemize}
+  \item
+    Price, services, products, location, contact, book an appointment
+  \end{itemize}
+\item
+  Imagine you are visiting the webpage of a salon you have been a customer of for a while. What content would you expect to see?
+  \begin{itemize}
+  \item
+    Appointments, portfolio, services, pictures of salon, bios of stylists, reviews, blog, prices, new offers
+  \end{itemize}
+\item
+  As a repeat customer, would you visit the webpage with one objective, or multiple? If multiple, which would you expect to see first?
+  \begin{itemize}
+  \item
+    Most said one - booking an appt, similar to previous answer for #5 and #4.
+  \end{itemize}
+\item
+  What else would you want to get out of the website of a salon as a repeat customer or new customer?
+  \begin{itemize}
+  \item
+    Coupons, sale info, review, mission statements, core values
+  \end{itemize}
+\item
+  Would you be more likely to visit this webpage on your phone, tablet, or desktop?
+  \begin{itemize}
+  \item
+    All but 1 said phone
+  \end{itemize}
+\item
+  Think back to the last webpage you interacted with. In terms of navigating this webpage to accomplish your certain task/goal, describe what you liked/didn't like. What do you wish was easier?
+  \begin{itemize}
+  \item
+    Website responsiveness (my phrasing)
+  \item
+    Menu with a list of options
+  \item
+    Was too complicated, aesthetically displeasing
+  \item
+    Pop up prompts to sign up - did not like
+  \item
+    Would have liked it to be easier to navigate and use - nav across the top
+  \end{itemize}
+\end{enumerate}
+
+
+\section{Appendix F: Potential bias}
+
+\begin{itemize}
+\item
+  \textbf{Confirmation bias} involves confirming preconceived notions in your hypothesis. This can be avoided by looking for signs the original hypothesis is incorrect, testing data empirically, and involving multiple people in the needfinding process.
+\item
+  \textbf{Observer bias} can create bias around what we want the user to do or assist them in accomplishing a task. This can also occur in phrasing survey questions in a bias manner. This can be avoided by separating motives and experiments, scripting interactions with users, and using a third party to reviewing interview scripts and surveys.
+\item
+  \textbf{Social desirability bias} occurs when a participant feels obligated to give positive feedback. An easy way to avoid this is to hide the true motive of a question in the survey and recording objective data
+\item
+  \textbf{Voluntary response bias} addresses the fact that strongly opinionated users tend to give voluntary feedback. To avoid this, do not expose the user to survey content prematurely.
+\item
+  \textbf{Recall bias} highlights the fact the users are not great at recalling exactly what they did, why they did, or how they felt while doing something. This can be reduced by having users think out loud during activities or recording interview/survey data during the experiment itself.
+\end{itemize}
+
 
 
 \end{document}
