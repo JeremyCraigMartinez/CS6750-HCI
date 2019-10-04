@@ -14,19 +14,121 @@ I will be focusing on a website’s navigation bar. The nav bar is usually the m
 
 
 \section{Brainstorming Plan}
-First, outline a brainstorming plan. Explicitly note the rules you will follow, the time you will allocate to brainstorming, and the standards you will meet before moving forward. Remember, your brainstorming plan should be characterized by objective criteria to meet defined in advance.
+The brainstorming plan must address the following list, and answering these points will serve as the concrete objectives and takeaways:
+
+\begin{itemize}
+\item
+  Write down the core problem
+\item
+  Constrain yourself
+  \begin{itemize}
+  \item
+    one idea in a number of different categories
+  \item
+    look for ideas in extraneous or expensive solutions - try to think outside of the box
+  \end{itemize}
+\item
+  Aim for 20 ideas
+\item
+  Take a break - split it up across two 30 minutes brainstorming sessions
+\item
+  Divide and conquer - consider not only global nav, but sub nav and alternatives to nav as well
+\end{itemize}
 
 
 \section{Brainstorming Execution}
-Then, execute your individual brainstorming plan and report the ideas you provided. The ideas that you provide will depend on how you approach brainstorming: you might supply a flat list of ideas, an image of your brainstorming worksheet, an organized list of alternatives, etc. You may include a picture of your brainstorming sheet as a significant portion of your deliverable for this item.
+\paragraph{The core problem} navigation/screen real-estate optimization on a mobile browser.
+
+\begin{enumerate}
+\item
+  \textbf{Focus on mobile browsers} - I want to focus on mobile browsers first since nearly all survey participants (from needfinding in Assignment M2) said they would access the site this way.
+\item
+  \textbf{Map mobile to desktop} - focus on mobile first and map that design to a desktop interface. Starting with this intention will cause the UI to have screen real estate optimization at it's core.
+\item
+  \textbf{Why mobile => desktop} - moving from a constricted interface to a more liberal interface.
+\end{enumerate}
+
+
+\clearpage
+
+
+\paragraph{Constrain yourself} consider nav in a global sense and within context of single page. Ideas that are intended to be outside the box/extraneous/expensive will be accompanied with an asterisk (*). This will be good to keep track that I am staying true to this plan.
+
+\paragraph{Global Navigation} this will be fixed (always available) from everywhere in the app. I will not deviate from this as an attempt to constrain the brainstorming. It is important that a user feel free to navigate to any part of the app at all times. During needfinding, this was one issue with the Groupon interface in that the user felt trapped at times in a subpage since the nav changed.
+\begin{enumerate}
+\item
+  \textbf{Avoid hamburger} - been there done that. Every mobile application has implemented the hamburger condensed nav in the upper right/left corner. This is probably a default responsive feature to popular style frameworks like Bootstrap. The point of this brainstorming session is to rethink nav and come up with a better solution to the hamburger.
+\item
+  \textbf{Add a search bar}
+  \begin{enumerate}
+  \item
+    \textbf{Fixed} - a search bar that is fixed at all times (under all pages)
+  \item
+    \textbf{Dynamic size} - represent search bar with icon and have it expand when on focus/hover (hover only for desktop)
+  \item
+    \textbf{Fixed size} - search bar is fixed
+  \item
+    \textbf{Suggested searches} - when focused, suggest searches/pages in app
+  \item
+    \textbf{Metrics driven suggestions} - use metrics from client sessions to track most popular searches and pages and fuel suggested searches from these results
+  \item
+    \textbf{Previous activity suggestions} - fuel suggested searches from previous activity (store previous searches in localStorage for use later on revisit - caveat, this will not work for people using private browsing)
+  \end{enumerate}
+\item
+  \textbf{Add fixed shorted nav}
+  \begin{enumerate}
+  \item
+    \textbf{Bottom / top} - maybe A/B test which is better - putting the nav on top or on bottom of screen
+  \item
+    \textbf{Side-to-side} - maybe A/B test (A/B/C/D) with left/right nav
+  \item
+    \textbf{Left vs right} - right nav will be easy for right handers (majority of population). Will having it on your thumb side cause accidental clicking resulting in sporadic navigating?
+  \item
+    \textbf{What does best mean?} How do we determine (from A/B testing metrics) what best is? Most use within site? Least use (past more than one nav)?
+  \item
+    \textbf{Combo with search} - add search in-line with nav
+  \item
+    \textbf{Dynamic nav} - fuel nav selections from metrics/previous page views (localStorage)
+  \item
+    \textbf{Nav size} - A/B test using 3 or 4 options in nav
+  \item
+    \textbf{Screen real-estate} - Consider screen real-estate with all nav location options. Elderly users need proper spacing due to not having a steady hand
+  \end{enumerate}
+\end{enumerate}
+
+\paragraph{Intra-page Navigation} navigate on current page. Solve the problem of making content on a single page as accessible as possible with real-estate left over from global nav/search
+
+\begin{enumerate}
+\item
+  \textbf{Profiles}
+  \begin{enumerate}
+  \item
+    \textbf{Tiles that expand} - using a grid, display subpages as tiles - ensure they appear clickable
+  \item
+    \textbf{Banners that expand} - using banners, display subpages that expand downward - ensure they appear clickable
+  \item
+    \textbf{Avoid modals} - in lieu of modals leverage animation that expands the tile/banner
+  \end{enumerate}
+  \textbf{Services / Prices / Products}
+  \begin{enumerate}
+  \item
+    \textbf{Binary?} If only two options, maybe a binary representation would be more interesting?
+  \item
+    \textbf{Picture correlation} - add pictures from past clients that correspond to services
+  \end{enumerate}
+  \textbf{Contacts / Hours / Location}
+  \begin{enumerate}
+  \item
+    \textbf{Stay consistent} - however I decide to divide these sub pages - do it the same here. The user should feel a consistent design - they will adapt quicker.
+  \item
+    \textbf{Stay consistent}
+  \end{enumerate}
+\end{enumerate}
 
 
 \section{Selection Criteria}
 After brainstorming several alternatives, detail the selection criteria you will use to select which three ideas to move forward to prototyping. This may take the form of the rules that will be applied to selecting the alternatives to move forward, or this may take the form of an explanation of the more situated reasoning behind why certain alternatives are selected. In short, explain how the alternatives to move to prototyping either will be or were selected.
 During this phase, specifically connect your selection criteria to the requirements definition or data inventory you posed in Assignment M2. For example, if one of your requirements was that the interface be affordable, then alternatives related to expensive hardware might be avoided.
-
-
-\clearpage
 
 
 \section{Prototype}
