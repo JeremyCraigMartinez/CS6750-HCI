@@ -37,7 +37,7 @@ The brainstorming plan must address the following list, and answering these poin
 
 
 \section{Brainstorming Execution}
-\paragraph{The core problem} navigation/screen real-estate optimization on a mobile browser.
+\paragraph{The core problem} navigation/screen real estate optimization on a mobile browser.
 
 \begin{enumerate}
 \item
@@ -92,11 +92,11 @@ The brainstorming plan must address the following list, and answering these poin
   \item
     \textbf{Nav size} - A/B test using 3 or 4 options in nav
   \item
-    \textbf{Screen real-estate} - Consider screen real-estate with all nav location options. Elderly users need proper spacing due to not having a steady hand
+    \textbf{Screen real estate} - Consider screen real estate with all nav location options. Elderly users need proper spacing due to not having a steady hand
   \end{enumerate}
 \end{enumerate}
 
-\paragraph{Intra-page Navigation} navigate on current page. Solve the problem of making content on a single page as accessible as possible with real-estate left over from global nav/search
+\paragraph{Intra-page Navigation} navigate on current page. Solve the problem of making content on a single page as accessible as possible with real estate left over from global nav/search
 
 \begin{enumerate}
 \item
@@ -119,7 +119,7 @@ The brainstorming plan must address the following list, and answering these poin
   \textbf{Contacts / Hours / Location}
   \begin{enumerate}
   \item
-    \textbf{Stay consistent} - however I decide to divide these sub pages - do it the same here. The user should feel a consistent design - they will adapt quicker.
+    \textbf{Stay consistent} - however I decide to divide these subpages - do it the same here. The user should feel a consistent design - they will adapt quicker.
   \item
     \textbf{Stay consistent}
   \end{enumerate}
@@ -127,15 +127,11 @@ The brainstorming plan must address the following list, and answering these poin
 
 
 \section{Selection Criteria}
-Moving from brainstorming to prototyping, I want to sketch out a basis for the interface and then build upon that. These three starting points will have the "how" functionality of the nav as it's main concern. From brainstorming, the main takeaways that I want to focus on when exploring prototypes will be
+Moving from brainstorming to prototyping, I want to sketch out a basis for the interface and then build upon that. These three starting points will have the "how" functionality of the nav as its main concern. From brainstorming, the main takeaways that I want to focus on when exploring prototypes will be
 
 \begin{enumerate}
 \item
-  \textbf{Maximize screen real estate} functionality without too much clutter
-\item
-  \textbf{Avoid the hamburger} - navigating the app should be more organic than this
-\item
-  \textbf{Avoid modals} - these are jarring
+  \textbf{Maximize screen real estate} functionality without too much clutter AND \textbf{Avoid modals} - these are jarring
 \item
   \textbf{Pick one main feature} of the nav and build around that
   \begin{enumerate}
@@ -172,46 +168,56 @@ These are the concrete takeaways from brainstorming that I will use as a startin
 For all prototypes, the numbers are an abstract representation to be replaced by either an icon or a icon/label pair. Some example icons and labels can be seen in Figure 1 for the first prototype. These will be reference throughout all three prototypes.
 
 \subsection{Prototype 1}
-The first prototype is a paper drawn wireframe of four example screens in the mobile interface. They are sequenced, moving from the upper left drawing, to lower right, to upper right, to lower left.
+\paragraph{Description} The first prototype is a paper drawn wireframe of four example screens in the mobile interface. They are sequenced, moving from the upper left drawing, to lower right, to upper right, to lower left.
 
 The nav is fixed and on the bottom of the screen, displaying one of two lists. If the user is navigating to this page for the first time, we will fill these three options with the three most frequently visited pages of the application. As the user clicks and navigates to other pages, we will record this in their own browser's local storage. If the user is a repeat visitor, then we will read this local storage and populate the nav based off of what pages they visited (most frequently if more than three) on their last visit.
 
 The search bar will be fixed as well at the top. However, it's display will be dynamic depending on whether it is in focus or not. Clicking the question mark will cause the search bar to slide out from the icon to the left. Then, the user can search the entire website's content from here.
 
-This addresses the requirements discovered during needfinding in assignment M2 because it leverages the access to the nav the users liked about YouTube's mobile app. It also spaces everything out for our users making it more difficult to accidentally click something they are not intending to. This meshes well with the data inventory in that it addresses all bullet points from the inventory list in a minimal gulf of execution.
-
-After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
+\paragraph{Evaluation} This addresses the requirements discovered during needfinding in assignment M2 because it leverages the access to the nav the users liked about YouTube's mobile app. It also spaces everything out for our users making it more difficult to accidentally click something they are not intending to. This meshes well with the data inventory in that it addresses all bullet points from the inventory list in a minimal gulf of execution.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.09]{figs/prototype-1}
-  \caption{Fixed nav with search icon}
+  \includegraphics[scale=0.07]{figs/prototype-1}
+  \caption{Prototype 1 - Fixed nav with search icon}
   \label{fig::1}
 \end{figure}
 
 
 \subsection{Prototype 2}
-Note that for most of these types (text, verbal, Wizard of Oz, physical), we would expect a textual description of the prototype in the body of the paper. For a paper prototype or wireframe, we would generally expect one page of your assignment to be the prototype, with around a half-page description/explanation of the prototype following. For a card prototype, we would similarly expect a portion of the prototype in the paper, but you may need to place the rest of the prototype in an appendix.
+\paragraph{Description} The second prototype is a paper drawn wireframe of five example screens in the mobile interface. They are sequenced, moving from the upper left to the right, top to bottom.
 
-After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
+The nav is actually not fixed on the page but placed at the top of every page in a grid pattern. The top 6 most common choices are displayed here. Selecting an option will render the relevant content below the grid, as well as auto-scroll the user down below the grid to the where the content is (this action is represented from screen 1 -> 2).
+
+As the user scrolls through the pages content, a call to action to scroll back to the grid (top of the page) will remain fixed at the top of the screen (this is clicked in screen 3 of the prototype). A search bar will remain at the top of the grid (top of the page) at all times. Then, the user can search the entire website's content from here. Icons on the grid may change according to results from search bar.
+
+\paragraph{Evaluation} This addresses the requirements of always having a nav available, however, it does so in a slightly different way. The auto scrolling will need to flow smoothly in order to no be too jarring and appear intuitive to the user where they are at all times. It also satisfies the requirement of having a dynamic search at all times. It does lengthen a simple task of navigating to a page (lengthening the gulf of execution). However, an intuitive design and animation may make up for this gulf by increasing intuition.
+
+This matches our data inventory in that it surfaces quickly the user's main motivation for being there. The calls to action, like in the first prototype, are driven by metrics. This allows us to dynamically read our users goals and displays the tasks/subtasks necessary to accomplish them. The scrolling helps the user detect where they are relative to components on the screen.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.09]{figs/prototype-2}
-  \caption{Grid with search bar}
+  \includegraphics[scale=0.07]{figs/prototype-2}
+  \caption{Prototype 2 - Grid with search bar}
   \label{fig::1}
 \end{figure}
 
 
 \subsection{Prototype 3}
-Note that for most of these types (text, verbal, Wizard of Oz, physical), we would expect a textual description of the prototype in the body of the paper. For a paper prototype or wireframe, we would generally expect one page of your assignment to be the prototype, with around a half-page description/explanation of the prototype following. For a card prototype, we would similarly expect a portion of the prototype in the paper, but you may need to place the rest of the prototype in an appendix.
+\paragraph{Description} The third prototype is a paper drawn wireframe of five example screens in the mobile interface. They are sequenced, moving from the upper left to the right, top to bottom.
 
-After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
+This nav is fixed at the bottom of the page. The top 5-7 choices (these numbers are arbitrary and user tests will help us get an exact value) are displayed in the nav. These are represented as dots at the bottom of the screen. The user can scroll vertically for the individual pages content. They can navigate pages by swiping horizontally. The dots match a UI similar to the iPhone home screen. The user can also click on the nav. Doing so will magnify the options and they can scroll horizontally through the options to find the page they are looking for. A search bar will remain at the top of the grid (top of the page) at all times. Then, the user can search the entire website's content from here. Icons on the grid may change according to results from search bar.
+
+Of all the nav bars, this feels like the one with the least friction. Comparatively, it takes a minimalist approach, and therefore, may lack in intuition. Another concern may be with the gulf of evaluation. Since this design differs so drastically from other mobile apps, the reaction in the UI to every action by the user must be obvious and reflect the importance of the action.
+
+\paragraph{Evaluation} This addresses the requirements of always having a nav available. The auto scrolling potentially introduces a larger gulf of execution if the user starts on page 1 and wants to get to page 7. They will have to either scroll all pages, or click the nav, scroll the nav, and click the seventh icon. Even though this gulf is larger, it is consistent with most mobile operating systems and offers (out of all prototypes) the most screen real estate for content. One addition is we can save in the browser state what page they last visited. If they were on page 6 the last time they used the app, then when they return, they will start at page 6.
+
+This matches our data inventory in that it addresses their motivation for being there. Their goals are to perform some task or obtain information on one of the pages. Since these pages are so readily available, their goal is addressed in the interface in a concise manner.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.09]{figs/prototype-3}
-  \caption{Carousel with search bar}
+  \includegraphics[scale=0.07]{figs/prototype-3}
+  \caption{Prototype 3 - Carousel with search bar}
   \label{fig::1}
 \end{figure}
 
