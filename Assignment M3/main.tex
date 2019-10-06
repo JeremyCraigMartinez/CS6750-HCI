@@ -127,11 +127,137 @@ The brainstorming plan must address the following list, and answering these poin
 
 
 \section{Selection Criteria}
-After brainstorming several alternatives, detail the selection criteria you will use to select which three ideas to move forward to prototyping. This may take the form of the rules that will be applied to selecting the alternatives to move forward, or this may take the form of an explanation of the more situated reasoning behind why certain alternatives are selected. In short, explain how the alternatives to move to prototyping either will be or were selected.
-During this phase, specifically connect your selection criteria to the requirements definition or data inventory you posed in Assignment M2. For example, if one of your requirements was that the interface be affordable, then alternatives related to expensive hardware might be avoided.
+Moving from brainstorming to prototyping, I want to sketch out a basis for the interface and then build upon that. These three starting points will have the "how" functionality of the nav as it's main concern. From brainstorming, the main takeaways that I want to focus on when exploring prototypes will be
+
+\begin{enumerate}
+\item
+  \textbf{Maximize screen real estate} functionality without too much clutter
+\item
+  \textbf{Avoid the hamburger} - navigating the app should be more organic than this
+\item
+  \textbf{Avoid modals} - these are jarring
+\item
+  \textbf{Pick one main feature} of the nav and build around that
+  \begin{enumerate}
+  \item
+    \textbf{Fixed nav at bottom} - I discussed during brainstorming where this nav could live and I think the bottom makes the most sense. The reason for this is that the thumb is already located there (not the top). And the screen is tall and narrow, so conserving space on the sides is important.
+  \item
+    \textbf{Search bar} - all prototypes MUST have a search. I will toggle between an expanding search (from an icon) and a fixed search bar at the top (maybe something that can be A/B tested and swapped in/out with other designs).
+  \item
+    \textbf{Central nav page} - this is something I did not address in brainstorming, and may feel like a bit more of an extreme implementation. Having an isolated page for the nav will widen the gulf of execution. However, if implemented properly, maybe this can look and feel a bit like a traditional top nav bar.
+  \item
+    \textbf{Carousel} - this is another rather different approach to a web app. This borrows the Apple iPhone homepage implementation by paginating in a horizonal fashion.
+  \end{enumerate}
+\end{enumerate}
+
+These are the concrete takeaways from brainstorming that I will use as a starting point for prototyping. However, I will continue to brainstorm as I am implementing these \textemph{rough} prototypes and use more of the findings to the designs.
+
+\paragraph{Data inventory} tying this back in to our users (see appendix A), the prototypes here consider the following
+
+\begin{enumerate}
+\item
+  Focusing on mobile first targets our age range of whom will default to a mobile browser over a desktop/laptop browser.
+\item
+  The Carousel prototype specifically will leverage their expertise in smart phone UI familiarity. Since this will match the look and feel of their mobile phone's operating system.
+\item
+  Information gathering via page visit metrics and leveraging prior user behavior via local storage in the browser will target their motivation for engaging in the website. This will attempt to start the user closer to their intended goal to narrow the gulf of execution.
+\item
+  Metrics around the search results will help us identify any gaps in what the user may want/need that the interface is not providing/making clear.
+\item
+  Addressing the "where the users are" is tricky, since I want to avoid the browser from asking for permission to their location. This can feel invasive to the user, especially if they do not realize why we are asking for this information.
+\end{enumerate}
+
+\section{Prototypes}
+
+For all prototypes, the numbers are an abstract representation to be replaced by either an icon or a icon/label pair. Some example icons and labels can be seen in Figure 1 for the first prototype. These will be reference throughout all three prototypes.
+
+\subsection{Prototype 1}
+The first prototype is a paper drawn wireframe of four example screens in the mobile interface. They are sequenced, moving from the upper left drawing, to lower right, to upper right, to lower left.
+
+The nav is fixed and on the bottom of the screen, displaying one of two lists. If the user is navigating to this page for the first time, we will fill these three options with the three most frequently visited pages of the application. As the user clicks and navigates to other pages, we will record this in their own browser's local storage. If the user is a repeat visitor, then we will read this local storage and populate the nav based off of what pages they visited (most frequently if more than three) on their last visit.
+
+The search bar will be fixed as well at the top. However, it's display will be dynamic depending on whether it is in focus or not. Clicking the question mark will cause the search bar to slide out from the icon to the left. Then, the user can search the entire website's content from here.
+
+This addresses the requirements discovered during needfinding in assignment M2 because it leverages the access to the nav the users liked about YouTube's mobile app. It also spaces everything out for our users making it more difficult to accidentally click something they are not intending to. This meshes well with the data inventory in that it addresses all bullet points from the inventory list in a minimal gulf of execution.
+
+After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.09]{figs/prototype-1}
+  \caption{Fixed nav with search icon}
+  \label{fig::1}
+\end{figure}
 
 
-\section{Prototype}
+\subsection{Prototype 2}
+Note that for most of these types (text, verbal, Wizard of Oz, physical), we would expect a textual description of the prototype in the body of the paper. For a paper prototype or wireframe, we would generally expect one page of your assignment to be the prototype, with around a half-page description/explanation of the prototype following. For a card prototype, we would similarly expect a portion of the prototype in the paper, but you may need to place the rest of the prototype in an appendix.
+
+After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.09]{figs/prototype-2}
+  \caption{Grid with search bar}
+  \label{fig::1}
+\end{figure}
+
+
+\subsection{Prototype 3}
+Note that for most of these types (text, verbal, Wizard of Oz, physical), we would expect a textual description of the prototype in the body of the paper. For a paper prototype or wireframe, we would generally expect one page of your assignment to be the prototype, with around a half-page description/explanation of the prototype following. For a card prototype, we would similarly expect a portion of the prototype in the paper, but you may need to place the rest of the prototype in an appendix.
+
+After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.09]{figs/prototype-3}
+  \caption{Carousel with search bar}
+  \label{fig::1}
+\end{figure}
+
+
+
+
+
+\clearpage
+
+\section{Appendix A - Data inventory}
+
+\paragraph{Our expectation on user types}
+The intended user for this application is adults in general. However, the current customer base will be the heavy focus of whom this experience will be designed for, which includes men and women ages 30-60. We anticipate the majority of the target audience to be older than millennials. When evaluating the intended audience, the following is taken into account
+
+\begin{itemize}
+\item
+  \textbf{Demographic of our audience} fits (for the most part) men and women aged 25-65. We are choosing this because, for the specific salon owner I am working with, their client-base has matched this for the last 20 years.
+\item
+  \textbf{Their level of expertise} will be assumed to be not very technical. We will assume for this reason that the user does not have a strong grasp on the differences between types of browsers, versions of browsers, or experiences between mobile vs desktop browsers. The UI should be styled in such a way that the look and feel is familiar, yet clearly geared to be optimized on the platform at hand.
+\item
+  \textbf{Their motivation for engaging in the task} will not be singular. The number of reasons one might visit a hair salons website could be for general salon information, hours of operation, salon team members, products/services they offer, schedule an appointment, contact information. We can try to anticipate our user's needs; however, we must assume they have any one of these intentions. Therefore, having an intuitive navigation inside the application is crucial to naturally enabling the user to accomplish the task.
+\end{itemize}
+
+\paragraph{Who are the users?}
+Our users are new and existing customers. Depending on which, they may have slightly different goals, however, this is not a drastic difference. Our users are men and women between the ages of 25-65.
+
+\paragraph{Where are the users?}
+They are on their phones! A small percentage will be on their laptops/desktops; however, this is a clear minority.
+
+\paragraph{What is the context of the task?}
+The context of the task is landing on a business home webpage (usually from Google/Yelp/some other search engine like service).
+
+\paragraph{What are their goals?}
+They typically have one goal - to find a new hair salon or to get information on their existing hair salon.
+
+\paragraph{What do they need?}
+They need a responsive app (for both mobile/tablet/desktop). They need clear calls to action on their landing page to quickly accomplish their task. They need more icons/images and less font. They need a nav bar on both top and bottom, so these CTA are always readily available.
+
+\paragraph{What are their tasks?}
+Their tasks are to find a salon portfolio, types of products/services, bio of stylists, prices, online booking, free consultation, blogs, hours, contact info, business history, etc.
+
+\paragraph{What are their subtasks?}
+Subtasks for these embody the steps in the gulf of execution. With the right design and nav bar, these subtasks can be reduced every time to one or two clicks.
+
+
+\section{Appendix B - Types of Prototypes}
 
 \begin{enumerate}
 \item
@@ -147,20 +273,5 @@ During this phase, specifically connect your selection criteria to the requireme
 \item
   A physical prototype: a physical object that allows you to mimic the actions a user might take with your prototype. Rather than having the prototype actually operate as intended, you would note the ease with which the user interacts with the physical device, and potentially simulate the results of different actions. This is particularly well-suited to prototypes for new hardware.
 \end{enumerate}
-
-
-\subsection{Prototype 1}
-Note that for most of these types (text, verbal, Wizard of Oz, physical), we would expect a textual description of the prototype in the body of the paper. For a paper prototype or wireframe, we would generally expect one page of your assignment to be the prototype, with around a half-page description/explanation of the prototype following. For a card prototype, we would similarly expect a portion of the prototype in the paper, but you may need to place the rest of the prototype in an appendix.
-After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
-
-
-\subsection{Prototype 2}
-Note that for most of these types (text, verbal, Wizard of Oz, physical), we would expect a textual description of the prototype in the body of the paper. For a paper prototype or wireframe, we would generally expect one page of your assignment to be the prototype, with around a half-page description/explanation of the prototype following. For a card prototype, we would similarly expect a portion of the prototype in the paper, but you may need to place the rest of the prototype in an appendix.
-After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
-
-
-\subsection{Prototype 3}
-Note that for most of these types (text, verbal, Wizard of Oz, physical), we would expect a textual description of the prototype in the body of the paper. For a paper prototype or wireframe, we would generally expect one page of your assignment to be the prototype, with around a half-page description/explanation of the prototype following. For a card prototype, we would similarly expect a portion of the prototype in the paper, but you may need to place the rest of the prototype in an appendix.
-After creating the prototype, evaluate it from the perspective of the requirements you gathered in Assignment M2. Which requirements does it meet? Which requirements does it miss? How well does the prototype mesh with the audience described in your data inventory?
 
 \end{document}
