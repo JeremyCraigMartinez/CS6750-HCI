@@ -10,27 +10,232 @@
 
 \section{Question 1}
 
-Create a thorough GOMS model for contacting a professor to ask for explanation of a grade
+\paragraph{The task} at hand is to create a GOMS model around the act of contacting a professor to to ask for an explanation of a grade. The following list will explicitly list out all the attributes of this GOMS model.
 
 \begin{itemize}
 \item
-  Identify the initial situation
+  \textbf{Identify the initial situation.} The situation is based in a fully remote online masters course (taking this course as the main focus for this model). In this situation, all communication is online and asynchronous.
 \item
-  Describe the selection rules
+  \textbf{Describe the selection rules.} The selection rules belong to the users preference among the different methods. Each method will yield a different frequency of feedback. The selection rules are also dictated by the professor when they declare which medium they will be most responsive on.
 \item
-  Outline several methods
+  \textbf{Outline several methods.}
+  \begin{itemize}
+  \item
+    Piazza - the student could post a message on Piazza. Students have the ability to post a question directly to the professor.
+  \item
+    Email - the student could email the professor for the explanation.
+  \item
+    Slack - the student could attempt to reach out to the TA responsible for grading their assignment over the class Slack channel.
+  \end{itemize}
 \item
-  Identify the operators that comprise those methods (along with the estimated amount of time each operator takes to execute)
+  \textbf{Identify the operators that comprise those methods}
+  \begin{itemize}
+  \item
+    \textbf{Piazza} - Operators include:
+    \begin{itemize}
+    \item
+      "New Post" button (1s)
+    \item
+      New post form comprised of post type, post to (instructor), select folders, summary, details, etc.  (1m)
+    \item
+      "Post my question" button (1s)
+    \item
+      Ongoing discussion on post (1hr - 3days)
+    \end{itemize}
+  \item
+    \textbf{Email} - Operators include:
+    \begin{itemize}
+    \item
+      Compose new email button (1s)
+    \item
+      Addressing email to instructor (10s)
+    \item
+      Adding subject and content (1m - 5m)
+    \item
+      Repeat process for continued conversation via email (1hr - 3days)
+
+\clearpage
+
+    \end{itemize}
+  \item
+    \textbf{Slack} - Operators include:
+    \begin{itemize}
+    \item
+      Direct messages, typing TA's name (10s)
+    \item
+      Composing message and sending it to the TA (1m)
+    \item
+      Continued conversation through Slack private chat (10m - 3 days)
+    \end{itemize}
+  \end{itemize}
 \item
-  Describe the ultimate goal
+  \textbf{Describe the ultimate goal.} The goal is to get reasoning for the grade received for the assignment. This may be from the professor if they graded your assignment directly, or from the grading TA (more likely).
 \end{itemize}
 
-You are not required to use the visualization schema seen in the lectures: you could use a simple outline format instead. However, your GOMS model should stand on its own with no explanatory text: every part of your submission should be a part of the initial situation, selection rules, methods, operators, or the final goal.
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{figs/q1}
+  \caption{Venmo home screen.}
+  \label{fig::1}
+\end{figure}
 
 \section{Question 2}
 
+\paragraph{The task} create a hierarchical task analysis of the task of submitting this assignment to Canvas and subsequently receiving one’s grade and feedback.
+
+\begin{itemize}
+\item
+  Navigate to Canvas
+  \begin{itemize}
+  \item
+    Type in URL/click bookmark/etc.
+  \item
+    Land at single sign on (SSO) service (https://login.gatech.edu/cas/login) and log in to your account
+    \begin{itemize}
+    \item
+      Click GT Account input field
+    \item
+      Type in username
+    \item
+      Click password input field
+    \item
+      Type in password
+    \item
+      Click password input field
+    \item
+      Click Login
+    \item
+      Click "Send me a push" for multi-factor authentication (MFA) (only detailing one of three MFA options here for brevity)
+    \item
+      Approve login through MFA
+      \begin{itemize}
+      \item
+        Pull out mobile phone
+      \item
+        Unlock phone
+      \item
+        Navigate to MFA app
+      \item
+        Confirm login attempt
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  Click "Assignments" on left-hand side nav bar
+\item
+  Click "Assignment P4" tile
+\item
+  Click "Submit Assignment" button
+\item
+  Upload file
+  \begin{itemize}
+  \item
+    Click "Choose file" button
+  \item
+    Navigate to file in drop down finder
+  \item
+    Either double click file or click file once and then click "open"
+  \end{itemize}
+\item
+  Click "Submit Assignment" button
+\end{itemize}
+
 \section{Question 3}
 
+\paragraph{The task} imagine a time before GPS navigation was as widespread as it is now, and think of the system for navigation comprised a married couple, a map, and any other artifacts the individuals use or generate.
+
+\begin{itemize}
+\item
+  \textbf{Perception}
+  \begin{itemize}
+  \item
+    The driver performs perception through driving and interacting with their environment, traffic signs, other drivers, and any other real-world variables in play in the atmosphere. They perform these through steering and manipulating the behavior of the vehicle.
+  \item
+    The passenger performs perception through interpreting the directions/actions of the vehicle and adjusting their course accordingly. They perceive the changes in the route constantly along their journey.
+  \item
+    The car perceives the turning of the steering wheel and adjusts the wheels accordingly.
+  \item
+    The odometer in the car perceives their distance from the rotation of the tires and updates the mileage count constantly.
+  \end{itemize}
+\item
+  \textbf{Memory}
+  \begin{itemize}
+  \item
+    The passenger performs memory by keeping track of where they have been and uses this to determine where they need to go. They perform this based off the performed actions of the car as a whole relative to the list of actions explained by the map and plotted course.
+  \item
+    The driver performs short term memory by retaining where they have been as not to back track as well as long term memory to abide by all rules of the road. They perform this subconciously through their driving ability.
+  \item
+    The odometer (similar to perception) keeps a running memory of the number of miles tracked. This could be extended if they are using a "trip" of the odometer specific to this trip.
+  \end{itemize}
+\item
+  \textbf{Reasoning}
+  \begin{itemize}
+  \item
+    The passenger performs reasoning (more so than any other object) in many ways. When plotting their course, the passenger must reason which route is the most reasonable to take based on time, distance, traffic (if possible), and so on. If they stumble upon a road closure, they must use reasoning to find an alternate route.
+  \item
+    The driver performs reasoning in collaboration with the passenger. Perhaps they plot their course before starting their journey (and our driver is responsible and does not multitask while driving). The driver reasons with the passenger on which route will work for them. If the driver comes up on traffic, they must reason which lane will help them navigate through the traffic most efficiently.
+  \end{itemize}
+\item
+  \textbf{Acting}
+  \begin{itemize}
+  \item
+    Both the passenger and driver perform acting with each other at times in order to remain calm. They must interact with eachother in a social dynamic in order to get timely information from the passenger to the driver so that they can manipulate the car appropriately.
+  \end{itemize}
+\end{itemize}
+
+In contrast with a single driver using a GPS navigation system, we reanalyze the list above:
+
+\begin{itemize}
+\item
+  \textbf{Perception}
+  \begin{itemize}
+  \item
+    (same) The driver performs perception through driving and interacting with their environment, traffic signs, other drivers, and any other real-world variables in play in the atmosphere. They perform these through steering and manipulating the behavior of the vehicle.
+  \item
+    The GPS perceives the cars location and direction keeping track of where they have been and using that to determine where they must go, much like the passenger.
+  \item
+    The GPS has much more advanced perception of real time traffic providing a more efficient path than the passenger would have been able to
+  \item
+    The driver must perceive the next actions to take from the GPS (verbal or visual)
+  \end{itemize}
+\item
+  \textbf{Memory}
+  \begin{itemize}
+  \item
+    The GPS (take Google Maps for example) has memory of all other drivers routes at one time. They can leverage this to make predicitons based on \textemph{usual} traffic patterns.
+  \item
+    The GPS retains the memory of where they have been and the list of directions that will take the driver to their destination.
+  \item
+    (same) The driver performs short term memory by retaining where they have been as not to back track as well as long term memory to abide by all rules of the road. They perform this subconciously through their driving ability.
+  \end{itemize}
+\item
+  \textbf{Reasoning}
+  \begin{itemize}
+  \item
+    The GPS will reason with road closures, accidents, sudden traffic jams and reroute the course accordingly.
+  \item
+    The GPS will reason with the map as a grid and use sophisticated algorithms to find the shortest path.
+  \end{itemize}
+\item
+  \textbf{Acting}
+  \begin{itemize}
+  \item
+    The driver must act with the GPS, which in most cases is uni-directional. The driver does have the option (depending on the GPS) to interact with it and select alternate routes.
+  \end{itemize}
+\end{itemize}
+
+Social cognition in the first example is present because the two users (driver and passenger) must work together to arrive at the destination. Communication back and fourth flows more naturally and the user (through natural language) can interact with the passenger to suggest alternate paths when applicable. The passenger can perceive visually what the driver is doing and react. The GPS does not have this capability and must solely rely on GPS coordinates. Distributed cognition plays in here because the cognitive tasks are spread across both the passenger and the driver (and the map). The driver has the congitive ability to steer the car. They have offloaded the cognitive task of determining when and where to steer the car off to the passenger. The driver can act as a dumb entity here simply interpretting the input from the passenger. The passenger is providing this information easily because the cognitive task of having an entire blueprint of the layout of the city is offloaded onto the map.
+
+The social relationships among the parts of the system for the sole reason of getting to a destination are less efficient in the first example than the second. Reason being is the GPS is able to leverage more information and more efficient algorithms for determines more efficient routes. The social relationship can fluctuate as well. For example, the passenger can have slow reaction skills and this can cause the driver to miss direction in situations where quick steering motions are required for the vehicle. Alternatively, the passenger can perceive unique situations in the road possible better than the GPS and articulate this to the driver in a more understandable fashion than the GPS, since a GPS system is less dynamic.
+
 \section{Question 4}
+
+Distributed cognition is a lens through which we can view HCI. Take any task you’ve described in a previous assignment for this class (or, if necessary, a task you haven’t previously described) and analyze it from the perspective of distributed cognition.
+
+First, identify and briefly describe the task you’ve chosen and the interface associated with it.
+
+Then, describe the pieces of the system.
+
+Then, describe what cognitive tasks are performed by each member of the system, both human and artifact alike. Make sure to choose interfaces that touch on multiple cognitive roles in the non-human portions of the system; it’s easy to ascribe memory to artifacts, but make sure to ascribe at least two of the other three cognitive tasks (perception, reasoning, and action) to the artifacts.
 
 \end{document}
