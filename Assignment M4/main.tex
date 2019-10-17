@@ -13,10 +13,10 @@ I will be focusing on a website’s navigation bar. The nav bar is usually the m
 \end{abstract}
 
 \section{Qualitative Evaluation}
+Qualitative evaluation will focus on the prototype from Assignment M3 found in Appendix B.
 
 \subsection{Evaluation Plan}
-
-This evaluation will focus on the prototype from Assignment M3 found in Appendix B. \textbf{The participants} for this evaluation will be gathered through \textemph{friends, family, and fellow students in the course}. The participants \textbf{will be recruited} through personal contact and a Piazza post in the class forum. The evaluation will \textbf{take place online}. It will be done using Post Event Protocol on a wireframing hosted at an address. The user will be directed to the website to step through the wireframing, then be prompted to take a survey. The results for the survey will be \textbf{hosted and recorded on Survey Monkey}.
+\textbf{The participants} for this evaluation will be gathered through \textemph{friends, family, and fellow students in the course}. The participants \textbf{will be recruited} through personal contact and a Piazza post in the class forum. The evaluation will \textbf{take place online}. It will be done using Post Event Protocol on a wireframing hosted at an address. The user will be directed to the website to step through the wireframing, then be prompted to take a survey. The results for the survey will be \textbf{hosted and recorded on Survey Monkey}.
 
 \subsection{Evaluationn Content - Post Event Protocol}
 
@@ -83,29 +83,67 @@ This evaluation addresses the data inventory in the following ways:
 Depending on the responses to the post event protocol evaluation, and how we measure these responses with the data inventory taken into consideration, we will be able to measure the effectiveness of our UI. This will provide valuable, contextual insight as to whether we are creating our UI with our data inventory in mind.
 
 \section{Empirical Evaluation}
-This evaluation will focus on the prototype from Assignment M3 found in Appendix C.
+Empirical evaluation will focus on the prototype from Assignment M3 found in Appendix C.
 
 \subsection{Control and Experimental Conditions}
-\paragrah{What is being tested} there are two major factors being tested in this prototype. 1. the user's awareness of lateral pages. 2. the user's ability to find the content they are most concerned with. 3. (related to the second) the gulf of execution for them to get to this content.
+\paragraph{What is being tested} there are three major factors being tested in this prototype. 1. the user's awareness of lateral pages. 2. the user's ability to find the content they are most concerned with. 3. (related to the second) the gulf of execution for them to get to this content.
 
-\paragrah{What is the point of comparison} the point of comparison will just be the user's evaluation/opinion on the prototype's effectiveness. This will not be comparing one prototype to another (which the lectures suggest you should do) since the prompt for this assignment explicitly says to analyze one prototype for the empirical evaluation.
+\paragraph{What is the point of comparison} the point of comparison will just be the user's evaluation/opinion on the prototype's effectiveness. This will not be comparing one prototype to another (which the lectures suggest you should do) since the prompt for this assignment explicitly says to analyze one prototype for the empirical evaluation.
 
 \subsection{Null and Alternative Hypotheses}
-The null hypothesis is what you assume to be true unless you can find conclusive proof for your alternative hypothesis.
+
+\paragraph{Alternative hypothesis} the alternative hypothesis is what we hope to prove with our prototype. We can accept the alternative hypothesis if the evidence is statistically significant (less than five percent chance the result resulted from random chance).
+
+Our alternative hypothesis: the user naturally swipes left-to-right or interacts with the navigation bar (at the bottom) without confusion. The user also interacts with the search bar to find more obscure information about the salon.
+
+\paragraph{Null hypothesis} the null hypothesis is what we accept if we are unable to prove the alternative hypothesis. The null hypothesis: the user is unaware of lateral pages and remains stuck on first page. The search bar is unable to match any given content based on their search parameters.
 
 \subsection{Experimental Method Used}
-Will it be between-subjects or within-subjects? How will subjects be assigned to groups, what will they complete as part of their condition, and what data will they generate? What analysis will you use on this data?
+The experimental method used will be within-subjects. Since we are only evaluating one prototype, we are measuring whether the prototype's navigation accomplishes what it sets out to. Since the assignment requires us to focus only on one prototype, there will be no grouping. Rather, all subjects will attempt to navigate to a specific page and metrics will be gathered on their ability to do so.
+
+\paragraph{Analysis} we will measure confusion based on idle time and note-taking. We will also record as data whether or not they accomplished their goal of finding their content. The number of operators they had to interact with will also be recorded to explicitly measure the gulf of execution. The number of operators users leverage to navigate the tool will help us improve the experience. This will also provide insight to how users interact with the tool in different ways. If certain users find more effective combinations of operators than we anticipated, this could drive animation/tools like Walk Me to guide the user experience.
 
 \subsection{Confounding Variables}
-Identify what lurking variables might confound your data.
+First and foremost, "control what you can, document what you can't." As with any browser-based interface, \textbf{screen size} is a confounding variable. We will be controlling this in our wireframe prototype by using only one screen size. However, this is not representative of the real world since the screen size of an iPhone 10X is significantly larger than an iPhone 5. We will document this inconsistency in our data and since we expect iPhone 5 users to be in our minority, we will focus on a screen real-estate comparable to the iPhone 10X.
+
+\textbf{Different browsers} will also be a confounding variable. Mobile safari may have subtle behavioral differences than mobile Chrome. One example is how Safari displays a browser nav/url search bar of it's own that is wrapped around the website. Chrome has similar behavior, however, it is visually slightly different due to button characteristics, color patterns, etc.
+
+Running empirical evaluation isolating these variables would be worth exploring to see if slight modifications based off of browser would improve user experience. This would involve keeping the same prototype and objectives, and having our groups use either a iPhone 5 vs 10, or mobile Chrome vs Safari, and empirically measuring their significance.
 
 \section{Predictive Evaluation}
+Predictive evaluation will focus on the prototype from Assignment M3 found in Appendix D.
 
 \subsection{GOMS Model}
-Describe the specific task or tasks that you’ll be addressing with that predictive evaluation. What will the user’s goal be? What operators will be available to them? Will you be evaluating a user accomplishing a single goal they know how to do in advance, or will you be evaluating a user’s navigation around the interface to figure out how to accomplish their goal?
+Predictive evaluation is evaluation we conduct without an actual user. Predictive evaluation allows us to design with the user in mind. It is best to conduct this when neither qualitative or empirical evaluation is not an option. Nonetheless, we will be conducting predictive evaluation on our third and final prototype. This exercise will be \textemph{evaluating a user accomplishing a single goal they familiar with in general, however, they will be figuring out how to do accomplish this goal in the content of this app}. A GOMS model of this prototype can be found below:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.51]{figs/GOMS}
+  \caption{Prototype 2 - GOMS model}
+  \label{fig::1}
+\end{figure}
+
+\paragraph{Describe the specific task or tasks that you’ll be addressing with that predictive evaluation.} This GOMS model and predictive evaluation will measure how effective all three of the \textbf{methods of navigating the website} are. It will measure the subtask of \textbf{keyword searching for pages not listed}.
+
+\paragraph{What will the user’s goal be?} The user will ultimately want to land on the page of the website with the content that they are seeking, whether that be hours of operating, location, booking an appointment, salon/barbershop bio, individual stylist/barber bio, products available, services available, etc.
+
+\paragraph{What operators will be available to them?} The operators available to them are listed in the GOMS model above.
+
+\begin{itemize}
+\item
+  Search bar (top of page)
+\item
+  Left-right swipe ability
+\item
+  Nav bar (bottom) - dots representing other available pages
+\item
+  Magnified nav bar (bottom) - magnified icons (corresponding to dots) representing other available pages
+\end{itemize}
 
 \section{Preparing to execute}
-Select two of these evaluations to complete for the next assignment, and explain why you selected those two.
+The two prototypes I anticipate selecting for assignment M5 will be those found in Appendix B and Appendix C (first two prototypes). The reason for this is that they both provide the maximum amount of screen real estate while remaining dynamic. The last prototype was actually the first one I designed during assignment M3 and moving from this prototype forward, I believe the other two prototypes built upon this and capture intuition and consistency with other UI practices well.
+
+\clearpage
 
 \section{Appendix A - Permission to Use Same Prototypes}
 
@@ -124,8 +162,8 @@ Note for the grading teaching assistant. I mistakenly used the same type of prot
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.07]{figs/prototype-1}
-  \caption{Prototype 1 - Fixed nav with search icon}
+  \includegraphics[scale=0.07]{figs/prototype-3}
+  \caption{Prototype 3 - Carousel with search bar}
   \label{fig::1}
 \end{figure}
 
@@ -133,10 +171,9 @@ Note for the grading teaching assistant. I mistakenly used the same type of prot
 
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.07]{figs/prototype-3}
-  \caption{Prototype 3 - Carousel with search bar}
+  \includegraphics[scale=0.07]{figs/prototype-1}
+  \caption{Prototype 1 - Fixed nav with search icon}
   \label{fig::1}
 \end{figure}
-
 
 \end{document}
