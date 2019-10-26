@@ -9,46 +9,218 @@
 \thispagestyle{fancy}
 
 \section{Question 1}
-First, select and describe a specific positive effect of the existence of programs like Georgia Tech’s OMSCS,
-  emphasizing how that positive effect is due to specific elements of the program
-  (such as its low cost, its asynchronous structure, its subsidized model, etc.).
 
-Then, select a potential negative repercussion of programs like Georgia Tech’s OMSCS,
-  emphasizing how that negative effect is also due to specific elements of the program.
+The Georgia Tech OMSCS program is an (excellent) example of massively open online courses (MOOC). MOOC's have been a large part of my education since the summer between my junior and senior year of my undergraduate degree at Washington State University. I enrolled in \link{https://www.pluralsight.com/codeschool}{Code School}, which has since been acquired by PluralSight it looks like.
 
-Finally, design how the program can be structured to preserve the positive effect while limiting the negative effect.
+\subsection{Positive Effects of MOOC's}
+
+\paragraph{Low Cost}
+I was starting my first internship, which was for a start up company called \link{https://app.minapsys.com/}{Minapsys}. At the time of my enrollment in CodeSchool, the pricing model was a subscription for unlimited access to the content. A one month subscription was \$30.00, which even to a student without a job, was fairly affordable.
+
+\paragraph{Asynchronous Structure}
+I enrolled for this to brush up on the relevant tech stack for Minapsys. In my interview I claimed I knew git, Node.js, and Angular, which I did not. My plan was to crash course educate myself on this tech stack in one week prior to my internship starting. I was spending 14-hour days rushing through git 101, Node.js 101, etc. There was a breadth of course content and the nature of the online class room allowed me to go at my own pace (watching lectures at 1.5x speed) and immediately continue on through the sections one after another.
+
+\paragraph{Accessibility}
+Since MOOC's are completely online, I was able to attend class anywhere and everywhere. My internship was located in Spokane, WA. For the week prior to my internship starting, during the majority of my streaming the course content, I was at my parents house in Vancouver, WA. I was even able to download the lectures onto my phone and "virtually attend" lecture on the drive across Washington state (my parents drove me since I did not own a car).
+
+\clearpage
+
+\subsection{Negative Effects of MOOC's}
+
+\paragraph{Binge Education}
+I'm playing off of the term 'binge watching' that we use for Netflix. When it comes to education, cramming this much content into such a short period of time can hinder retention. Memory retention suffers when one completes a course in 5 hours that was intended to take 1 week. Traditional education has a higher retention because you get time to process the content you are absorbing. Traditional computer science curriculums gives time to learn by doing which naturally takes place when the course is lengthened out over more time.
+
+\paragraph{Popularizing Current Tech Stacks}
+Many MOOC curriculums (\textemph{though I believe Georgia Tech's OMSCS is not one of these}) teach contemporary tech stacks, like MEAN, Docker, AWS, React, etc. This is giving young professionals the impression that this is the most important (and perhaps only) content that they must learn.
+
+The MOOC's do this because a strong skillset in these may lead to the quickest software engineering paycheck. However, they skip past computer science fundamentals like data structures, lower level tools like the Linux kernal, operating systems, assembly code, etc. Coding paradigms like LISP can help train one's ability to think in abstract, programmatic ways. The ability to reference a rich knowledge-base full of this background will assist them in finding robust, scalable solutions that optimize space and time complexity. For example, few students graduating from bootcamps or taking MOOC's know how to map out complex conditional logic with a truth table
+
+\subsection{How to Remedy the Negative Effects}
+
+\paragraph{Throtteling}
+I think still allowing students to move at an increased pace should still be available, since there are situations where this may still be applicable (reviewing material). However, introducing a pricing structure, perhaps, where the cheapest solution throttles your progression to only allow a certain amount of lecture coverage in one day.
+
+\paragraph{Teach the Fundamentals}
+Emphasize courses that teach the fundamentals and advertise them in a way that highlights their value. Tie them back into interviewing questions and skills required of top tier companies like Google, Microsoft, Facebook, etc.
 
 \section{Question 2}
 
-Identify an area you encounter regularly where political motivations are determining the design of technology.
-  First, describe the area you’ve selected.
+An area I encounter political decisions driving design regularly is on \link{https://www.google.com/}{Google's search engine}. Since every reader of this paper likely uses Google every day (if not every hour) in their daily work (and personal) lives, I will forego an in-depth description of the tool.
 
-Then, describe the stakeholders in that area, including their motivations.
-  Any interesting technology will likely have at least three groups of stakeholders.
+\paragraph{Stakeholders in this tool}
 
-Then, describe at least three ways those motivations are specifically affecting the design of the technology in that area.
-  If you’re on the right track, you’ll likely find the motivations are in conflict.
+\begin{enumerate}
+\item
+  \textbf{Government}. This stakeholder's motivation is to regulate behavior on this platform to ensure it is lawful.
+\item
+  \textbf{The end-user}. This stakeholder is the one using the product as their main search engine. Their motivation is to find answers to a question.
+\item
+  \textbf{3rd party companies}. This stakeholder includes the companies that are paying Google for elevated search result placement. Their motivation is to advertise their business/product.
+\item
+  \textbf{Teams at Google}. This stakeholder includes everyone at Google working on this tool - from engineers, to product, to design, to sales, and so on. (many stakeholder groups if you want to break it down). Their motivation (just to name one), is to build a technologically interesting/advanced product.
+\item
+  \textbf{3rd party companies (again)}. This stakeholder includes all the companies benefiting from exposure from Google's search engine without having paid for it.
+\item
+  \textbf{The end-user's friend}. This stakeholder includes everyone surrounded by the end-user that is affected by their actions as a result of their Google search. This sounds somewhat vague, so as an example, consider someone who is a part of a group at someone's house. They are all trying to decide what movie to watch. One person (the end-user) Google searches new comedies in 2019 and selects to watch that movie. Now everyone they are with was affected by this Google search (and are, for the sake of this argument, the end-user's friend in this scenario).
+\end{enumerate}
+
+*note: I was unable to think of political actors in this scenario. Not all stakeholders motivations are directly political. However, I will highlight how politics influences their motivations and their motivations outcomes.
+
+\paragraph{Ways politics affect these motivations}
+
+\begin{enumerate}
+\item
+  \textbf{Government}. This stakeholder's motivation affects the content of the product. The US government can censor information that is consider top-secret or unlawful. This censorship can either be direct or indirect via fines/sanctions against Google. This is also not limited the US government, obviously.
+\item
+  \textbf{The end-user}. This could be an end-user in a country that has specific sensitivity (politically) to certain content. Depending on Google's censor/non-censor policies, this can motivate a user to use Google, or instead choose a less censored alternative, like \link{https://duckduckgo.com/}{DuckDuckGo}. This could also be true if you are concerned about Google profiting off of your data and sharing it with 3rd parties (see appendix B on how DuckDuckGo claims not to do this).
+\item
+  \textbf{3rd party companies}. This stakeholder could potentially be a political campaign or oil company, which will pay for an advertisement to push certain ballot measures.
+\item
+  \textbf{Teams at Google}. Google often times decorates it's search engine's homepage. The decorations range from historical significance, to political statements, to art. These decision are made at some level in product/management in Google (I assume). I am also willing to assume that many engineers (myself included) would like to put up a design to support the Hong Kong protestors. However, this would mean that end-users/government in mainland China would be negatively affected. This could result in Google being banned in China, and so politically this decision will not be made. While this is just an example, it sets the ground for examples like it.
+\item
+  \textbf{3rd party companies (again)}. Omitting this since this stakeholder is a bistandard of over stakeholder actions.
+\item
+  \textbf{The end-user's friend}. Omitting this since this stakeholder is a bistandard of over stakeholder actions.
+\end{enumerate}
 
 \section{Question 3}
 
-Every year, ACM CHI is the world’s largest conference on Human-Computer Interaction.
-  Select two papers from one of the most recent three CHI conferences (2019, 2018, 2017).
-  For each of the two papers, list the paper’s title and author list, and then briefly summarize the paper.
-  In summarizing, be careful not to restate the abstract:
-    the abstract for the paper emphasizes the paper’s significance,
-    but your summary should focus on describing the paper to someone unfamiliar with the contents at all.
+\subsection{Together in Bed? Couples’ Mobile Technology Use in Bed}
 
-Then, describe why you find this paper interesting or why you selected it for this assignment.
+\paragraph{About}
+This paper can be found on the \link{http://delivery.acm.org/10.1145/3310000/3300732/paper502.pdf}{ACM Digital Library}. The title of the paper is \textemph{Together in Bed? Couples' Mobile Technology Use in Bed\super{1}}. The authors of the paper are \textemph{Tarja Salmela, Ashley Colley, and Jonna Häkkilä}.
+
+\paragraph{Summary}
+There has been research conducted on the impact of the use of technology in bed on sleep and mental state. This paper builds upon this by analyzing this in the context of a couples bed. It explores the meaning of the bed accessed by mobile technology, as well as, the strategies of both individual and shared technology use in bed (in the context of couple's relationships).
+
+The scene of the bedroom is established as a basis for their findings. The bedroom is a place that holds "safety, affection, love, trust, and sexuality." They argue that the intimacy of couple's sleep "seems to be tensioned by technological devices, especially smartphones." The authors have recognized a gap in the current research. Current research focuses on this context and measures technologies affect on sleep tracking and health and wellness. The focus of this paper is to detract from this and measure technologies affect on the social impact between partners. The technology being analyzed includes smartphones/tablets.
+
+Their research questions form the foundation of their qualitative data and empirical analysis:
+
+\begin{enumerate}
+\item
+  What kinds of strategies/practices do people in committed relationships have for both individual and shared mobile technology use in bed?
+\item
+  How do couples perceive the influences of mobile technology use on their verbal and physical interaction in bed?
+\item
+  What perceived effects does the presence of mobile technology in bed have to the meaning of the bed as a domestic sphere, characterized by intimacy and privacy?
+\end{enumerate}
+
+\paragraph{Their methods} for gathering data to answer these questions are two fold: field interviews first, then using those findings to form online survey questions. For the former, they had 12 couples participate. For the latter, they had 117 online surveys completed.
+
+\paragraph{Their findings} suggest that mobile phone use before bed was highly common, as an aid to relaxation prior to sleep. Wake ups, caused by smartphones, were frequent and accepted as normal. It was also common for partners to use technology while the other is trying to sleep, and that a wide array of coping strategies were applied. They found that both individual use and shared use have potential to enhance and detract from a couple's relationship. This was observed by the technologies ability to foster conversation, as well as, physical closeness. Their conclusion was that mobile technology use in bed by couples does not straightforwardly change the meaning of the bed as an intimate domestic space.
+
+\paragraph{Why I find this paper interesting}
+I find this paper interesting because it is relevant to my own love life. I am in a relationship and often wonder how technology plays a role in our interactions in the bedroom. I specifically avoid putting a TV in the bedroom for this reason. However, the laptop and smartphone still make their way in. Based off of these findings, I would like to practice charging our phones in the living room and introducing a traditional alarm clock. This may encourage more organic interaction without leaning on the crutch of a mobile technology to drive conversation/interaction.
+
+\subsection{Virtual Hubs. Understanding Relational Aspects and Remediating Incubation}
+
+\paragraph{About}
+This paper can be found on the \link{http://delivery.acm.org/10.1145/3310000/3300471/paper241.pdf}{ACM Digital Library}. The title of the paper is \textemph{Virtual Hubs. Understanding Relational Aspects and Remediating Incubation\super{2}}. The authors of the paper are \textemph{Jandy Luik, Jenna Ng, and Jonathan Hook}.
+
+\paragraph{Summary}
+This paper recognizes the emergence of platforms used to support remotely located entrepreneurs and startup companies. It offers an understanding of these 'virtual hubs', and the inherently socio-technical interactions that occur between their members. The paper is broken down into three parts. The authors first broadly define and document 25 examples of these 'virtual hubs.' Then, they analyze 10 groups/participants in 10 separate virtual hubs. Finally, they analyze these findings in comparison to non-virtual hubs and propose opportunities for advancing these platforms.
+
+Many of these platforms support access and interaction with mentorship, investors and investment, networking, etc. The intention of these platforms is to accelerate growth in emerging platforms. The tools they highlight here that assist these platforms as outlined as video conferencing software, learning management systems, shared documents, and other customized software.
+
+Their research questions form the foundation of their qualitiative and empirical data:
+
+\begin{enumerate}
+\item
+  what kinds of support do existing platforms seek to offer new businesses?
+\item
+  How are they organized and configured in order to provide such support to their remotely located participants?
+\item
+  How effective are these platforms in offering such mediated incubation processes??
+\end{enumerate}
+
+\paragraph{Their methods} for gathering the data to answer these questions are two fold. First, the identification and categorization of 25 hubs. Second, a set of semi-structured interviews with 10 'virtual hub' participants and organizers. Their goal in following this process, was they sought to provide an overall picture of the current landscape of these hubs and more in-depth insight to these hubs and how positive participants experiences were.
+
+\paragraph{Their findings} suggest that the comparison of these virtual hubs with their physical counterparts bear similarties, but also their virtual model present both challenges and opportunities. They point out, as a disclaimer, that these findings are merely a first investigation and would require further data to support these patterns. Methods for advancing the design of such platforms should pay attention to optimzing/leveraging the followinig:
+
+\begin{enumerate}
+\item
+  Activities that encourage collaboration among the participants of a 'virtual hub', like online hackathons, may contribute to customization, nonmentorship activities, and building of a wide and engaged user base.
+\item
+  Manifesting informal/ad-hoc sharing among participants through post-incubation platforms and virtual communal spaces.
+\item
+  Consider the social dimension in remediating incubation, such as the feeling of an incubation experience's authenticity.
+\item
+  They also suggest exploring other ways of remediation that highlight absorption, where the platform itself represents the incubation process.
+\end{enumerate}
+
+\paragraph{Why I find this paper interesting}
+I chose this paper because working 100 percent remotely is something I hope to do in the next couple of years at some point. My main motivation for this is for autonomy and freedom to travel. I am interested in how start up companies are able to build, engage, mentor, motivate, secure, and so much more in a fully remote work environment. A friend of mine works for Basecamp (which is mostly remote). Their work-life balance is phenominal. They are headquartered in Chicago, however, he works in the central european timezone. At my work today, we mostly just use email and Slack. While we are not a start up in an incubation platform, these are tangentially related.
 
 \section{Question 4}
 
-Select two different conferences from this list. <see list in assignment description>
-  Then, from each conference, select a paper.
-  For each of the two papers, list the paper’s title and author list, and then briefly summarize the paper.
-  In summarizing, be careful not to restate the abstract:
-    the abstract for the paper emphasizes the paper’s significance,
-    but your summary should focus on describing the paper to someone unfamiliar with the contents at all.
+\subsection{Conference - The ACM Creativity and Cognition 2019}
 
-Then, describe why you find this paper interesting or why you selected it for this assignment.
+\paragraph{About}
+This paper can be found on the \link{http://delivery.acm.org/10.1145/3330000/3325497/p95-girotto.pdf}{ACM Digital Library}. The title of the paper is \textemph{CrowdMuse: Supporting Crowd Idea Generation through User Modeling and Adaptation\super{3}}. The authors of the paper are \textemph{Victor Girotto, Erin Walker, and Winslow Burleson}.
+
+\paragraph{Summary}
+The authors here have identified the value in collective brainstorming on a large scale. However, they point out that this mechanism does not consider individualities that could hinder effectiveness. They introduce a novel adaptive system for supporting this called CrowdMuse. The system models ideators based on their past ideas and adapts the system views and inspiration mechanism accordingly.
+
+Large crowds show great potential for creativity due to their large numbers and diversity. In this paper, the authors explore how to tailor inspiration selection to individuals in a group (referred to as ideators). Their overarching research question explored is \textemph{"How can we adapt inspirations to ideators in order to improve ideation performance?"}.
+
+This starts by introducing the literature that inspired this work. They then introduce CrowdMust, describing how it functions in detail and relating the design to the literature. =Then they describe two large-scale online studies in which they evaluate CrowdMuse.
+
+\paragraph{The CrowdMuse System} is comprised of two main views. The first is referred to as the \textbf{idea workspace}. It's purpose is to allow users to explore and manipulate existing ideas in a card-like interface (similar to \link{https://trello.com/}{Trello} or \link{https://www.atlassian.com/software/jira}{Jira}). The second view is the \textbf{solution space}. This is a matrix of visualization with the purpose of providing an overview of which categories have been thoroughly explored, as well as yet to be explored.
+
+\paragraph{Their methods} consisted of posting a study request through the Prolific platform. Participants were shown a short tutorial, and then asked to fill out a questionnaire afterward. The authors used the data from these studies to gather and analyze empirical data.
+
+\paragraph{Their findings} concluded that, given an appropriate categorization, the adaptive inspirations were able to positively affect breadth of ideation. They also found that the adaptive solution did not affect results, though issues of usability may have been a factor.
+
+\paragraph{Why I find this paper interesting}
+This paper is interesting because it ties in directly into our lectures on distributed cognition (2.8). This is tapping the source of cognition in large groups and attempting to draw the most from this collective knowledge base. I think the expansion and application of a tool like this could drive innovation in nearly every field.
+
+\subsection{Conference - The ACM Collective Intelligence 2019}
+
+\paragraph{About}
+This paper can be found on the \link{http://ci.acm.org/2019/assets/proceedings/CI_2019_paper_47.pdf}{conference website}. The title of the paper is \textemph{Can Free Resources Create Economic Value? The Impact of Crowd Contributors on Venture Capital. Investment to Open Source Technologies\super{4}}. The authors of the paper are \textemph{Francisco Polidoro Jr. and Wei Yang}.
+
+\paragraph{Summary}
+The authors in this paper explore the effect of open source contribution on venture capital investments. On one hand, companies are foreiting the proprietary right of technologies. However, this can bring unique benefits to new ventures' of innovation and growth, thus broadening the field in which they are investing.
+
+Existing literature has not addressed the puzzle of how entrepreneurs can translate open source effects into financial benefits. In this study, the authors seek to answer this question by investigating the impact of collaboration with contibutors on ventures' acquisition of venture capital investment.
+
+\paragraph{Theory and hypothesis}
+
+\begin{enumerate}
+\item
+  Collaboration with external contributors increases the likelihood of receiving venture capital investment for an open source-based venture.
+\item
+   The venture’s knowledge disclosure in the open source communities weakens the positive effect of collaborating with external contributors on the likelihood of receiving venture capital investment for an open source-based venture.
+\end{enumerate}
+
+The authors measure venture capital investment in dollar amount invested. They measure open source contribution in the form of \link{https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request}{Pull Request} in \link{https://github.com}{Github}. Finally, they measure a ventures knowledge disclosure through the size (kilobytes) of the contributions in the pull requests.
+
+\paragraph{Why I find this paper interesting}
+I chose this paper because the title sounded intriguing to me. However, I find their methods of research to be flimsy and not backed up by substantial empricial data. I don't believe these data are indicative of their results or proving their hypothesis. I still think this topic is interesting to explore since, as most software engineers, I encourage and rely on open source contributions. However, the author's implementation, in my humble opinion, is missing the mark by a large margin.
+
+\clearpage
+
+\section{Appendix A: Bibliography}
+
+\begin{enumerate}
+\item
+  Tarja Salmela, Ashley Colley, and Jonna Häkkilä. 2019. Together in Bed? Couples’ Mobile Technology Use in Bed. In CHI Conference on Human Factors in Computing Systems Proceedings (CHI 2019), May 4–9, 2019, Glasgow, Scotland UK. ACM, New York, NY, USA, 12 pages. \link{https://doi.org/10.1145/3290605.3300732}{https://doi.org/10.1145/3290605.3300732}
+\item
+  Jandy Luik, Jenna Ng, and Jonathan Hook. 2019. Virtual Hubs: Understanding Relational Aspects and Remediating Incubation. In CHI Conference on Human Factors in Computing Systems Proceedings (CHI 2019), May 4–9, 2019, Glasgow, Scotland UK. ACM, New York, NY, USA, 12 pages. \link{https://doi.org/10.1145/3290605.3300471}{https://doi.org/10.1145/3290605.3300471}
+\item
+  Victor Girotto, Erin Walker, and Winslow Burleson. 2019. CrowdMuse: Supporting Crowd Idea Generation through User Modeling and Adaptation. In Proceedings of the ACM Creativity and Cognition Conference. \link{http://delivery.acm.org/10.1145/3330000/3325497/p95-girotto.pdf}{http://delivery.acm.org/10.1145/3330000/3325497/p95-girotto.pdf}
+\item
+  Francisco Polidoro Jr. and Wei Yang. 2019. Can Free Resources Create Economic Value? The Impact of Crowd Contributors on Venture Capital. Investment to Open Source Technologies. In Proceedings of the ACM Collective Intelligence Conference. \link{http://ci.acm.org/2019/assets/proceedings/CI_2019_paper_47.pdf}{http://ci.acm.org/2019/assets/proceedings/CI_2019_paper_47.pdf}
+\end{enumerate}
+
+\section{Appendix B: DuckDuckGo Data Privacy}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.8]{figs/duckduckgo}
+  \caption{DuckDuckGo Data Privacy.}
+  \label{fig::1}
+\end{figure}
 
 \end{document}
