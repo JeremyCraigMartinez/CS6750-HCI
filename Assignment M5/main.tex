@@ -14,12 +14,229 @@ I will be focusing on a website’s navigation bar. The nav bar is usually the m
 
 \section{Qualitative Evaluation}
 
-\section{Empirical Evaluation}
+\subsection{Evaluation General Report}
 
-\section{Evaluation Summary}
+The exercise for the qualitative evaluation was the post event protocol. We had 6 participants look at prototype 1 (seen in appendix B). The sessions went well, and the user's feedback/thought process highlighted gaps in the UI where intuition was lacking.
+
+Every session was run almost the exact same. I gave the participant a brief explanation to set the context of their task (see below)
+
+\begin{enumerate}
+\item
+  \textbf{Context}
+  \begin{enumerate}
+  \item
+    You are looking for a new hair salon/barber on your smart phone
+  \item
+    You Google search the area for a new salon/barber and come upon one result that takes you to Google Maps
+  \item
+    You click the "Website" icon in Google Maps that drops you onto the salon/barber's website in your phone's mobile browser
+  \end{enumerate}
+\item
+  \textbf{Your general objective} is to find \textbf{<information>} on this salon/barber in order to determine if you would be interested in giving them your business.
+  \begin{enumerate}
+  \item
+    \textbf{Information} here was replaced with each participant to be one of the following: general information, hours of operation \& location, products/services, or scheduling an appointment. This change was minor and relatively abstract since the prototype still retained numbers for navigation symbols rather than actual page content.
+  \end{enumerate}
+\end{enumerate}
 
 \clearpage
 
-\section{Appendix A}
+I think this exercise went well as is. However, I would like to extend this to be a bit more dynamic. Perhaps, creating a wireframe using \link{invision}{https://www.invisionapp.com/} so that the user can dynamically navigate the app. This will help us get more realistic data to the struggles of interacting with and navigating the app as a whole.
+
+\subsection{Evaluation Results}
+
+The summary of the notes from the \textemph{post event protocol} can be found below. Instructions on how to read these can be found in Appendix D.
+
+\begin{enumerate}
+\item
+  Page 1 - Initial impression
+  \begin{enumerate}
+  \item
+    Likes the simplicity of the options\super{*}. \textbf{None commented on button size/spacing. Maybe this would only be commented on if it were a problem?}
+  \item
+    Concerns that the UI may be a little confusing if option is not listed\super{1}. \textbf{Maybe putting more emphasis on the search bar will remedy this?}
+  \item
+    What are the numbers supposed to signify?\super{2}. \textbf{Had to explain again the numbers represent different content that may be displayed in site - relevant to their objective.}
+  \end{enumerate}
+\item
+  Page 2 - First page selection
+  \begin{enumerate}
+  \item
+    Likes autoscroll\super{*}. Confused if since it autoscrolled down, can I just scroll up to get back to previous screen?\super{1}.
+  \item
+    What is arrow at the top of the page for?\super{2}
+  \end{enumerate}
+\item
+  Page 3 - Same page scrolling
+  \begin{enumerate}
+  \item
+    Page content scrolls as intended. \textbf{Most participants did not have much to say about this page.}
+  \end{enumerate}
+\item
+  Page 4 - Searching for option not displayed
+  \begin{enumerate}
+  \item
+    Clicking the arrow at the top is useful for getting back to navigation\super{4}. \textbf{The other two participants didn't even comment on that functionality...}
+  \item
+    Why is the 5 shaded in?\super{2}. \textbf{Maybe there should be some animation of highlighting this on initial selecting it, then a subtle delay on the scroll?}
+  \item
+    Search bar feels small comparatively\super{4}. \textbf{It's clear this needs to be larger. Also, I think some helpful text in the search bar will help intuition as to why that search bar exists and that users should interact with it to find other content}.
+  \end{enumerate}
+\item
+  Page 5 - Search results
+  \begin{enumerate}
+  \item
+    Search results are very small\super{1}.
+  \item
+    What if search results cover 1 and 4, how do I click them?\super{1} \textbf{Maybe reduce grid to 2x2 so search results occupy where 1 and 4 would be. I could also widen the search for this reason too?}
+  \item
+    Does this mean 1, 4, 6, 7, 8, 9 are all relevant to my search?\super{1} \textbf{I think this user was overthinking this. If you see your option, you are just going to click it.}
+  \end{enumerate}
+\end{enumerate}
+
+\subsection{Evaluation Analysis}
+
+\paragraph{What are the main takeaways for improving the interface?}
+The main takeaways is that the search bar's size reflects its importance to the options below it. If the search bar is small, it will feel insignificant to the 6 options below. Another, animation and transitions will be crucial in conveying to the user where they are in the app and how to get back to where they want to go. More specific detail on what the takeaways and improvements are can be found below in \textbf{Apply learnings}.
+
+\paragraph{Participants feedback} Analysis of the feedback is inline with the notes (in bold). This feedback was super helpful! Some of it I can dismiss as overly nit-picky I believe. One example of this was when restructuring the options in the grid upon searching. I don't think a user will be confused on these options changing if they are addressing their search results. However, it did make me think about what to do when they de-emphasize the search. Should the options go back to normal? This feedback caused me to consider this edge case (maybe it's just a normal case even).
+
+One of my participants was over the age of 80. Analyzing their feedback separately from some of the younger participants was helpful. Button placement and placing operators in a way that prevent slips from shaky hands is crucial.
+
+Ultimately, the feedback showed me that this prototype is on the right path. Some of the minor misunderstandings from the feedback can be tightened up with subtle animation/transitions. This is centered around the fact that every reaction to an action taken in the interface should match the intention and reflect the severity of the action.
+
+\subsection{Applying Learnings}
+
+On the initial selection of an option, highlight their selection, and delay the autoscroll for maybe a 1/4 of a second, then autoscroll slowly. The search bar should be larger and as wide as the page. This search bar should have some helpful text in it to indicate what it should be used for (i.e. \textemph{Looking for something else?}). Add some animation to the scroll back to top arrow, even if it very subtle. This could be as simple as having the shadow pulse? Upon displaying search results from search bar, reduce grid to 2x2 so the top two selections are not inaccessible.
+
+\section{Empirical Evaluation}
+
+Every participant was instructed that they must find the "Contact us" page in the UI, which is represented as the number 7. They were given no description of the UI. I instructed the participants to focus on one of the screens in the prototype drawings (Appendix C) and physically tap the drawing of the screen as if it were a real phone and they were interacting with the app. As with the first exercise, 6 participants were asked to conduct the study.
+
+\subsection{Empirical Evaluation General Report}
+Everything went as expected for this exercise. Any deviations or outliers in the participants performance will be highlighted by the raw data found in Appendix E. I think this exercise was helpful and insightful to how easy it was for a user to complete a given task. Next time, I will run this exact test on multiple prototypes to nail down empirically, how effect the interface is at empowering the user to complete a given task. Nothing happened during these tests that would call into question the results. This was expected given the simplicity of the prototype.
+
+\subsection{Empirical Data and Statistics}
+The raw empirical data can be found in Appendix E. To gather the data in the far-right column (Number of actions - gulf), every time the participants finger touched the paper, it was recorded as an action (I know task).
+
+Every user was aware that the app had lateral swiping capabilities. When I asked why, most participants responded, "because the interface is so similar to other smartphone operating systems." To avoid bias with this, I ensured that half of my users were NOT owners of an Apple iPhone.
+
+Also, every participant was able to locate the "Contact us" page (number 7) as well. These both are binary statistics that were unanimous.
+
+Moving on to the gulf of execution, this was measured in actions the participant took with the user interface. I will summarize the data points here (found in Appendix E). All of the users that took 6 actions to complete their goal simply swiped from right to left until they reached the number 7.
+
+The two users that completed the task in 3 actions first studied the prototype carefully. They noticed the third page with the magnified numbers on the bottom. So they tapped the dots on the bottom (action 1), which took them to the third page, they scrolled the numbers (action 2), then clicked 7 (action 3).
+
+The one user that completed the task in 9 actions interfaced with the search bar. They immediately clicked the search bar, then communicated to me that they would start typing "Contact", then click "Contact us". I counted every character click as an action ("Contact".length === 7) which resulted in 9 total actions.
+
+\subsection{Evaluation Analysis}
+
+\begin{table}[H]
+  \centering
+  \caption{Statistical analysis}
+  \label{table:1}
+  \begin{tabular}{@{}lcrl@{}}
+    \textbf{Completion percentage} & \textbf{Avg. gulf of execution} & \textbf{Std dev. gulf of execution}\\
+    \midrule
+    100 percent & 5.5 actions & 2.2583 actions \\
+  \end{tabular}
+\end{table}
+
+Given these results, we are able to accept the alternative hypothesis, which states: \textbf{the user naturally swipes left-to-right or interacts with the navigation bar (at the bottom) without confusion. The user also interacts 3 with the search bar to find more obscure information about the salon.}
+
+These results matched what I expected. Using the search bar introduced far more actions required to take, thus increasing the gulf of execution. I didn't consider this at first, however, it makes sense and is not as impactful as the numbers suggest. Comparing the numbers, 9 vs 3, I don't believe typing the search is 3x as cumbersome as swiping the bar on the bottom. However, this did (unintentionally) provide a quick option for users experienced in this UI while still providing an intuitive interface for users less familiar.
+
+A one-off observation I would like to point out (not exactly a lurking variable) is that users studied the prototype before interacting with it. This gave them insight as to the interworking's before attempting to complete their objective. This would be changed in the future for more pure results.
+
+\subsection{Applying Learnings}
+We want users to become experienced in our UI and leverage these small gulfs of execution. Some kind of animation or indication that magnifying the icons on the bottom and swiping through them is an option would be ideal. We want the user to be aware of these features.
+
+Also, as I stated before, I would avoid presenting the entire prototype to the user prior to them interacting with it. I also think, similar with the prototype analyzed in the qualitative evaluation, that the search bar should be larger to give it the proper emphasis.
+
+\section{Evaluation Summary}
+
+\paragraph{Understandings the users}
+I would like to get a wide array of users that are familiar with specific mobile operating systems - Android, iOS, any others? I did a good job of this for this assignment; however, I would like to have more participants as well. I would also like to get more participants from older generations. Younger generations are much more intuitive with technology, and so while it is vital to test every age group appropriately, we will need more participants (in general), including more from older generations.
+
+\paragraph{Design alternatives}
+I would also like to apply these designs to larger screens (desktop/tablet) and test their effectiveness there. Along with any additional features that that screen real estate would make possible.
+
+I would also like to add a speaking feature to the search capability and emphasize it more. That way a user only has to speak for their searching of a page/content.
+
+Also narrowing in on specific pages, integration and deep links to other apps, like navigation for "location" pages, and minor additional features like this would be fun to explore.
+
+\paragraph{Prototyping alternatives and evaluation next steps}
+I would also flip these prototypes and performs these tests again. This way, we would have empirical and qualitative data on both of our prototypes. Then, I would apply the learnings to the interfaces. I would also probably implement slightly more sophisticated/dynamic prototypes.
+
+I would then run these same tests. I would get more participants, and expose them to both UIs, asking them which they liked more and so I can have a controlled variable (the participant) when comparing UIs.
+
+However, I intend to do the exact same evaluations because for this type of interface, I believe their the most hands on, intensive, and prove out the hypothesis the best. Iterating on these evaluations, and applying learnings to the prototypes continues to solidify an implementation.
+
+\clearpage
+
+\section{Appendix A - Permission to Use Same Prototypes}
+
+Note for the grading teaching assistant. I mistakenly used the same type of prototype for all three prototypes in assignment M3. I checked with the professor in Piazza (https://piazza.com/class/jze97ormuua2w2?cid=831) and they confirmed that it was okay to continue with these same three prototypes here in Assignment M3. Since the deduction for misreading the prompt and not varying my prototypes was incurred in the grade for M3, it should not be considered a deduction in this assignment. I apologize for the inconvenience and thank you for the consideration.
+
+\section{Appendix B - Prototype 1 - Qualitative Evaluation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.07]{figs/prototype-2}
+  \caption{Prototype 2 - Grid with search bar}
+  \label{fig::1}
+\end{figure}
+
+\section{Appendix C - Prototype 2 - Empirical Evaluation}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.07]{figs/prototype-3}
+  \caption{Prototype 3 - Carousel with search bar}
+  \label{fig::1}
+\end{figure}
+
+\section{Appendix D - Post Event Protocol Notes Summary}
+
+\paragraph{How to read notes} This is a summary grouping of all (6) of the participants feedback. For every note, I will add a superscript with a number indicating how many participants repeated a comment similar to this.
+
+For example, consider the following note: this UI is very intuitive\super{*}. This means that every participant made a comment similar to this (* for everyone).
+
+Another example: the button placement is too close\super{2}. This means two participants (out of 6) felt this way.
+
+Also, any notes/thoughts/reflections of my own in response to what the participants were saying \textbf{is recorded in bold}. Any animation/page transition had to be explained during the demo since the prototype is not a fully functioning dynamic app.
+
+\section{Appendix E - Empirical Test Data}
+
+\begin{enumerate}
+\item
+  Every user seemed to be aware of the lateral pages. No confusion here. Empircally, this would be just a binary 0/1 (or in this case, aware/unaware).
+\item
+  This is a binary statistic as well 0/1, of whether or not they found the page they were looking for. Every participant was able to find the page they were looking for.
+\item
+  I recorded the number of actions the participant took (they verbalized what action they would take, since the prototype is not dynamic). A task is recorded as anytime the participants finger had to touch the screen.
+
+\begin{table}[H]
+  \centering
+  \caption{Empirical data}
+  \label{table:1}
+  \begin{tabular}{@{}lcrl@{}}
+    \textbf{Participant} & \textbf{Aware of lateral pages} & \textbf{Completed goal} & \textbf{Number of actions - gulf}\\
+    \midrule
+    1 & Yes & Yes & 6 \\
+    \midrule
+    2 & Yes & Yes & 3 \\
+    \midrule
+    3 & Yes & Yes & 3 \\
+    \midrule
+    4 & Yes & Yes & 6 \\
+    \midrule
+    5 & Yes & Yes & 6 \\
+    \midrule
+    6 & Yes & Yes & 9 \\
+  \end{tabular}
+\end{table}
+
+\end{enumerate}
 
 \end{document}
