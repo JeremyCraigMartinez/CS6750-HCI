@@ -1,0 +1,119 @@
+\input{ main-style }
+
+\title{Project P\\}
+
+\authoremail{Jeremy Martinez}{jmartinez91@gatech.edu}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\section{Elevator Interface}
+The elevator system we have at my work will be analyzed for this project. I work at a company called Avalara in Seattle, WA. We have been in our current building since February 2018, which the building first completed construction. While some appliances in the building have been updated since then, the elevator system has remained the same (so relatively new system).
+
+\section{Heuristic Evaluation}
+
+\subsection{Interface description}
+The elevator system is a bit different than the traditional system. The entire system is controlled by a touch screen interface located in the room just outside of the elevator (on every floor). Floors to the building are protected to only allow authorized individuals per floor. In order to authenticate, one must touch their company badge to the scensor (black rectangle) located below the touch screen interface. After doing so, the lockpad symbols will be removed for the floors you are authorized. Then you can make one selection and the screen will tell you which elevator door (our of 4) to use. A diagram of the screen interface can be seen below (figure 1).
+
+\paragraph{What works well} about this interface is that it prohibits indecision (\textbf{thus preventing user slips/mistakes}\super{1}) once a user enters the elevator. THe process of making this selection prior to entering the elevator is what makes this possible.
+
+The badge system also makes authentication/authorization work well with restricting access to certain floors. Specifically, the lockpad symbol used in the interface communicates this clearly and the animation of removing these symbols after swiping your badge illustrates clearly that the action of swiping your badge is authorizing your access. This is a \textbf{feedback cycle that leverage a small gulf of evaluation}\super{2}. It is easy to evaluate that swiping your badge did/did not have
+
+\clearpage
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.25]{figs/elevator}
+  \caption{Elevator touch screen interface}
+  \label{fig::1}
+\end{figure}
+
+an effect on authenticating you based off of it the lockpad symbols were removed or not (more on this in \textemph{what doesn't work well}, too). This badge security system helps leverage \textbf{distributed cognition}\super{3} on information about what each user has access to. The system delegates authorization to each user and reflects this in the interface without the user (or any other participant) requiring knowledge of this.
+
+This system especially does a good job (or attempts to do so, addressed in \textemph{what doesn't work well}, too) of using the \textbf{participant principal}\super{4} in the entire systemn. The elevator tries to consider the context of a user's selection in relation to all other selections at that exact moment). It will recognize if your destination matches another elevator already in motion, and add you to their route if optimal. However, it will avoid selecting an en-route elevator if it already has too many stops planned in order to not slow down other participants elevator ride too much.
+
+Also, while this may be my own personal opinion, but the display in which elevator a user had to use is intuitive as well. The room with the interface is a small hallway with 4 doors, two on each side, with the touch-screen (one on each side) interface located between the doors. Elevator doors 1 and 2 are on the east end, 3 and 4 are on the west. If you are making your selection on the west end, it will display the two doors in front of you (3 and 4) on top and the two doors behind you (1 and 2) on bottom, and vice versa (Figure 2). This is intuitive because it leverages \textbf{mapping}\super{5} to the real world. They are displaying the doors in front on top, and the doors behind on bottom, which is the case when facing that interface in that exact moment. The display of this matches the context of the exact moment perfectly.
+
+Finally, as a one-off note, the \textbf{gulf of execution}\super{6} for this interface is appropriate to it's function. In the context of other security protected elevator systems, it still have the exact number of tasks required to execute a goal (badge in, select floor). The system had added optimizations without having to add to this gulf.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.25]{figs/elevator-selection}
+  \caption{Selecting floor on west-end interface, door 1 (behind) delegated}
+  \label{fig::1}
+\end{figure}
+
+
+\paragraph{What doesn't work well} about this interface is the selection algorithm used to decide which elevator to use. This may even be a bug in the algorithm, however, it seems that the interface chooses an elevator that is not optimal, or chooses an elevator door as it is closing and going on it's way. The interface has a poor implementation of enforcing a \textbf{participant principal}\super{1} in that it is inaccurate at considering of users destinations and selecting elevators accordingly.
+
+Also, the interface does not communicate the reason one does not have authorization to a certain floor. The lockpad just remains, and if this is inaccurate, one must find the building maintenance to inquire the reason. No number or location is provided when selecting an unauthorized floor, either. So the user is given no guidance as to how they can resolve their issue. This is a confusing \textbf{gulf of evaluation}\super{2} strictly in the scenario where a user is not authorized for any selection or has not authenticated properly (due to system error).
+
+While the interface does a good job of \textbf{mapping}\super{3}, it could also improve upon this by adding intuitive symbols for some of the themed floors. One example: a popular motive for going to the fitness could be to use the pool. It is intuitive that, if there were a gym, it would be on the floor "fitness." However, adding a symbol to indicate a pool could augment this intuition and draw on existing design patterns.
+
+While this interface, overall, does a decent job of \textbf{direct manipulation and making the interface invisible}\super{4}, it could also be improved upon fairly easily. The only direct manipulation the user feels they have is when immediately interfacing with the touch screen. However, once the user gets into the elevator, there's little indication that they are headed to the correct floor. The user has no indication that they have manipulated the system and loses that assurance when stepping into the elevator. So placing a screen indicating which floors are queued next would be a solid augmentation to this overall system.
+
+\section{Interface Redesign}
+
+\subsection{Participant Principal}
+This is less about an interface and more about optimizing the internals of the system. However, one \textemph{major} improvement that could be made to this system is to prevent the selection of an elevator door that is closing. If you select a floor in the touch-screen interface as another elevator door is closing, it will select that one. Then other elevators may even come to your floor in the meantime it takes the other elevator to drop off it's user, and return to the floor to pick you up. This is clear buggy behavior (and happens frequently). So a simple addition to this interface is to de-emphesize the selection of these elevators in this specific scenario.
+
+\subsection{Gulf of evaluation}
+The gulf of evaluation can be improved upon dramatically, especially in the error case of failed authentication, or invalid authorization.
+
+\paragraph{Failed authentication} this scenario occurs when a user attempts to badge-in (scan badge on black sensor below touch-screen interface) and the system fails to recognize who they are (authentication failed). This can happen for a number of reasons, however, the user should at least be notified that this was the failure and that they should either try again, seek assistance, use the other touch-screen instead, or that they have no access. At the moment, it does nothing. See figures 3-6 below.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.22]{figs/invalid-choice}
+  \caption{User selects floor they are not authorized to access. This user still is authorized to some part of the system}
+  \label{fig::1}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.22]{figs/please-try-again}
+  \caption{System failure, authentication failed. Some unknown network issue, backend failure, etc.}
+  \label{fig::1}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.22]{figs/hotel-guest}
+  \caption{Hotel guest attempting to access incorrect elevator. Building is shared with Embassy suites, whom sometimes attempt to use incorrect elevator}
+  \label{fig::1}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.22]{figs/auth-failed}
+  \caption{Authentication failed. This user is NOT authorized to any part of the system}
+  \label{fig::1}
+\end{figure}
+
+\subsection{Mapping}
+The mapping of this interface could be augmented with more symbols passed the lockpads. Once the system is unlocked, these mappings could easily bridge the gap of knowledge, particularly, with users using this interface infrequently. The building is shared with other businesses as well. So when customers/partners are visiting the building for the first time, they will be less confused if they see a symbol they recognize of the business they are looking for (see figure 7).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{figs/mappings}
+  \caption{Mappings for each operator in the interface}
+  \label{fig::1}
+\end{figure}
+
+\subsection{Direct Manipulation and invisible interfaces}
+Direct manipulation is done well in this initerface for a brief second while touching the elevator interface. However, if you forget which elevator you've chosen, and if multiple people are using the system at once, you can lose track of which elevator to board once the door opens.
+
+You lose the sense that you've had any direct interaction with the system because there is no lasting indication that you've selected a floor, and that elevator 2 is the elevator you must board once the doors open.
+
+An attempt to make this interface invisible would be to just print the floors queued for a particular elevator right on their door (as well as inside the elevator).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.5]{figs/selections-displayed}
+  \caption{Displaying queued floors selected and delegated to elevator}
+  \label{fig::1}
+\end{figure}
+
+
+\end{document}
