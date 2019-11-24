@@ -51,4 +51,239 @@ This script will be broken down by task. Before each task we will ask the user t
 
 One other potential bias we may encounter during this exercise is an economic bias. Lower budget travel alternatives may be preferable for some/most participants (attractions that cost little to no money). If one of these tools only suggests attractions that are expensive, this could reflect as a negative user experience. One possible way to avoid this would be to allocate a budget to each participant (however, this would add a large amount of complexity).
 
+\section{Think Aloud exercise}
+\subsection{Think-Aloud}
+Complete notes for the think-aloud exercise can be found in Appendix 3. A summary of those findings will be covered here. The think-aloud exercise was took place in the Road Trippers desktop application, which has three main views in the interface that were covered: the homepage, the map, and profile pages of entities (accommodation, attractions, restaurants, etc.). Portions of the application that were intentionally avoided include new profile sign up, login, support, contact, etc. User's articulated their thought process in completing these tasks, which are consolidated and summarized below:
+
+\begin{itemize}
+\item Home page
+  \begin{itemize}
+  \item Call to action (CTA) - "Let's get started" with to-from locations is useful to surface immediately. Not wasting any time in giving the user the operator to complete their goal.
+  \item Walk me seems useful, but was not engaged with by any users.
+  \item Intellisense drop-down auto-complete was useful to destination
+  \item The graphics in the UI should be intentional so as not to confuse or mislead the user
+  \item Use addition: add distance modal upon hovering over the route to show how far along the trip a specific attraction/accommodation/restaurant is. Use has to guess here or "eyeball it."
+  \end{itemize}
+\item Maps page
+  \begin{itemize}
+  \item "Your trip is not saved" prompt urges user to create an account - customer retention
+  \item Map looks a bit like Google Maps
+  \item Many features in app suggest you should pay for an account to unlock more functionality. Some of these features are free in other apps (offline maps - Google Maps)
+  \item Only one user dragged route - perhaps not very intuitive that this functionality exists
+  \item Mention of "gas price" seems really useful, although inaccurate. The UI said 54.00 dollars for one user (San Fran - LA) which is not likely. Also, how do they predict MPG?
+  \end{itemize}
+\item Finding accommodation
+  \begin{itemize}
+  \item Providing exact price for accommodation would be more useful that generalized dollars signs
+  \item It's hard to gauge where I should look for accommodation (same reason as listed in "Home page" section
+  \item Accommodation profile page should show reviews inline with profile
+  \item It's unclear whether clicking on this page adds something to your trip or not. This is the main CTA on this page, it's emphasis should reflect that. Same with "add to trip" button.
+  \item Expect clicking accommodation on left side bar has same result as clicking indicator in map view - opening entities profile page
+  \end{itemize}
+\item Finding attractions
+  \begin{itemize}
+  \item Information overload! Way too many results are displayed. More fliters need to be introduced here. Categorizing attractions here would be useful as well.
+  \item If user is browser for attractions, they do not care about anything with less than a 4 star rating
+  \item "No free waypoints left" is frustrating for user
+  \item Super useful to display attraction information in profile page - hours, parking, general info, cost/free, etc.
+  \end{itemize}
+\item Finding food and drink
+  \begin{itemize}
+  \item It is unclear how to remove something from itinerary. Why is there a distinction between disabling/deleting?
+  \item Again with the rating, no user cares about something with a rating less than 4 stars
+  \item Icons help summarize information on these restaurants.
+  \item Again, need filters (category and price would be especially useful)
+  \item Just a note: user is likely to pick food & drink close to other "waypoints."
+  \end{itemize}
+\item Exporting itinerary
+  \begin{itemize}
+  \item A PDF options would be useful. However, saving the link was at least useful.
+  \item One user got confused on how to send the email. Rather than having a mailto: link, they could embed a modal (with to:/from:) to send email in app. This will be less jarring than the OS opening the mail app (as what happens with a mailto: link)
+  \item Note: sign in functionality was not explored here (probably the most optimal form of exporting/saving an itinerary). We were more interested in exploring an anonymous experience.
+  \end{itemize}
+\end{itemize}
+
+\section{Appendix 3: Think-Aloud Results}
+All notes from think-aloud exercise are recorded in first person (simply recording their comments as they use the tool)
+
+\subsection{User 1 notes}
+
+\begin{itemize}
+\item Home page
+  \begin{itemize}
+  \item Homepage is very aesthetic, and the picture gives me a sense of a good road trip already
+  \item "Let's get started" is taking me (immediately) to what I need
+  \end{itemize}
+\item Maps page
+  \begin{itemize}
+  \item "You trip is not saved" suggests I can create an account and return to this (so I don't have to do it all at once)
+  \item Also, some friends and I could create a joint account and edit the same trip! I wonder if they can create their own account and I can share the trip with them?
+  \item The map looks and feels a little bit like Google Maps
+  \item "Scenic" map option seems to be paid for...
+    \begin{itemize}
+    \item What are "waypoints"? (one perk of paid option)
+    \item Ah, trip collaboration, (answer to question from earlier)
+    \item Offline maps, live traffic would be useful, but I can just use Google Maps for that... (had to remind user that this is not for navigation, but trip planning only)
+    \end{itemize}
+  \item Bar on left gives me options for what I'm looking for, attractions, places to sleep, etc.
+  \item Clicking "get help" did nothing...
+  \item The route defaults to the I-5 option that I was told I couldn't take
+  \item But, the route seems draggable, so I can just move the route over to highway 1
+  \item I don't recognize the check points along the path, but it is nice how I get a time breakdown between them all.
+  \end{itemize}
+\item Route metrics
+  \begin{itemize}
+  \item I think I've got the route figured out now.
+  \item The overall distance of the trip is 461 miles.
+  \item The over driving time of the trip is 9:39
+  \end{itemize}
+\item Finding accommodation
+  \begin{itemize}
+  \item The check points break down as
+    \begin{itemize}
+    \item 1) 0:00 (San Fran)
+    \item 2) 1:12
+    \item 3) 2:06
+    \item 4) 0:57
+    \item 5) 3:02
+    \item 6) 2:23
+    \end{itemize}
+  \item I'm still not sure why these are my "waypoints." It's also telling me I only get 1 "waypoint" left. Why's that?
+  \item Since the half way point (time-wise) is between 4-5, I will find accommodation here. Clicking the bed icon seems to give me options. This is clear and intuitive since this icon could only mean that one thing
+  \item I really like the dollar sign slide bar, easy to find cheap places to stay!
+  \item Motel 6's are gross (HA!)
+  \item We will stay at Treebones Resort (seems about half way), only two dollar signs (not really sure if that's cheap or not). Maybe some indication to what dollar amount that means would be nice...
+  \item Clicked this and it took me to a different page... clicking add to trip. It says it has no availability for any dates I select... this is discouraging
+  \end{itemize}
+\item I'm out of free "waypoints"... looks like I can't add anything more in this tool (instructing them to use a pen and paper from here on out)
+\item Running out of "waypoints" makes it feel like they are nickle and dime-ing me.. kind of frustrating since it has not demonstrated enough value for me to want to pay for it. I can't actually complete the task with adding all my stops unless I pay for this service...
+\item Finding attractions
+  \begin{itemize}
+  \item There are way too many attractions to sift through, feels overwhelming.
+  \item Reading through these attractions, a lot of these sound boring.. I don't care about most of these.
+  \item There's a small green number in the upper left of the image, 1-5 it seems
+  \item World's largest artichoke, HA! The surfing museum might be cool
+  \item The beaches filter is good, we will add the highest rated beach to our list
+  \item Cowell Ranch beach looks very cool too! We will stop there (1)
+  \item Now I am scrolling past anything with less than 4.5 rating!
+  \item We'll go to one of the vineyards near our destination for dinner night 1, August Ridge Vineyards (1)
+  \item I wish there were filters for attractions
+  \item I like the profile pages of the attractions, but why don't they just show Google reviews? I have to separately google everything. When I googled something with a 5.0 rating, the Google search result said it was permanently closed... I'm definitely not paying for this service
+  \item Fly above all paragliding for the last attraction! (2)
+  \item Santa Barbara brewing co is near here, we'll have that as our second planned meal (2)
+  \end{itemize}
+\item Emailed the link to myself to save it. I would also create an account so that it just saves to that and I can log in later for it
+\end{itemize}
+
+\subsection{User 2 notes}
+
+All notes from think-aloud exercise are recorded in second person (simply recording their comments as they use the tool)
+He chooses the route from Los Angeles to Bixby Canyon Bridge
+
+\begin{itemize}
+\item Maps page
+  \begin{itemize}
+  \item The Map page is clear. It shows different buttons of different functions. Although I have spent a little time to find what the button means, I finally found it on the left.
+  \item The route is clear when I set the start point and end point. But I do not know whether I can change the other route. For example, if I come back, I will go to different route to see different attractions.
+  \end{itemize}
+\item Route metrics
+  \begin{itemize}
+  \item The time and distance is clear and easily understand.
+  \item The overall distance of the trip is 348 miles.
+  \item The over driving time of the trip is 07:07
+  \end{itemize}
+\item Finding accommodation
+  \begin{itemize}
+  \item It is easy for me to look for the accommodation to stay in. The button is clear.
+  \item Adding the accommodation to trip is also important point for me to break down my trip.
+  \item Click the button of accommodation is cool. It could show a lot of places to stay. However, it only shows the "\$\$". If I want to choose hotel, I am more likely to know the specific price. Even though I click the hotel, I do not get the price.
+  \end{itemize}
+\item Finding attractions
+  \begin{itemize}
+  \item "No Free Waypoints Left" makes me noisy because I cannot add attractions.
+  \item Too many attractions to select. Whether it can provide some filter or rank.
+  \item The attraction can divide the time into different part. It is cool.
+  \item I do not know how long I should spend on each attraction. If I know it, I may arrange time better.
+  \item I do not know the category of the attraction.
+  \end{itemize}
+\item Finding food and drink
+  \begin{itemize}
+  \item It is easy to understand the icon of eating.
+  \item I want to know the specific category of that restaurant because if I want to eat lunch, I will not want to go to the cafe.
+  \item Also, if I can know the average price of that restaurant, it will be better for me to select.
+  \end{itemize}
+\item If it can be downloaded as a pdf file, it will be better for me to save it. Or it can send a link to my email, it will ok for me.
+\end{itemize}
+
+\subsection{User 3 notes}
+All notes from think-aloud exercise are recorded in first person (simply recording their comments as they use the tool or narrating their actions). \textit{Side thoughts (third person) will be emphasized}
+
+\begin{itemize}
+\item Overall impression
+  \begin{itemize}
+  \item art work on the site is confusing
+  \item "starting and ending" of trip being presented immediately on the page is useful and actionable
+  \item dismissed the "walk me" helper in bottom right corner - "I can do it myself"
+  \item I like the intellisense drop-down options (offloading cognitive process for destination spelling/discovery?). Make it so I don't have to type it all, too
+  \end{itemize}
+\item Map view
+  \begin{itemize}
+  \item Hover over icons are descriptive in the left side-bar. What are "Waypoints"?
+  \item "Plus" is obviously some membership. Maybe "Waypoints" are some kind of currency/tips/tricks.
+  \item Interesting they mention gas price. How do they know your car's gas mileage?
+  \item It'd be cool if the dot on the path (as the mouse scrolls over the route line) would mention distance from starting point
+  \end{itemize}
+\item Finding accommodation
+  \begin{itemize}
+  \item It's hard to gauge half way along the route to find accommodation
+  \item initial accommodation options found from beach attraction page
+  \item Hotel profile page should display reviews inline
+  \item Can I add this to my trip? Is this recording these as a part of my trip? Or should I be taking notes?
+  \item I'm confused on what to do once I find what I want to do. \textit{Clicks "add to trip" once user found it}
+  \item \textit{User is planning [mostly] everything in one town near accommodation}
+  \item I expect the click action on the left side bar to match the click action on the attraction in the map
+  \item Adding hotel(1)
+  \end{itemize}
+\item Finding attractions
+  \begin{itemize}
+  \item \textit{User will find attractions first and then plan everything else around that}
+  \item I like the ratings, and pictures/visuals in the left side bar. It provides good context
+  \item Adding beach to trip(1)
+  \item *clicks image - opens a new window*
+  \item Is this a new window? Oh, it's on top of the old window... The extra pictures and reviews here are helpful
+  \item checking hours, profile, parking info. Clicking nearby hotels in this view
+  \item User also adds Paramount Studios in Los Angeles
+  \end{itemize}
+\item Finding food and drink
+  \begin{itemize}
+  \item Added a taco restaurant, then tried to remove it \textit{user actually just toggled it off. User never figured out how to remove it from trip}
+  \item Added winery(1) in same town as accommodation
+  \item Looking half way down to Los Angeles for restaurant. Selecting "Crab bucket" restaurant.
+  \item \textit{while looking for crab bucket, user shrugs off and scoffs at restaurant with 3.5 rating}
+  \item I'm not going to choose a restaurant with a low rating. A filter here would be nice
+  \end{itemize}
+\item Saving/exporting trip
+  \begin{itemize}
+  \item Could sign in and save to account \textit{user was instructed to skip this for sake of the exercise}
+  \item Click "share trips" in upper right corner. Click email
+  \item Opening email app (in computer, not browser) was confusing and jarring
+  \item I expected another browser window to open with a "to" and "from" (email form). \textit{The reaction in the UI for the click didn't match the severity of the action taken place}
+  \item I expect to stay in the modal and on the same web page. I don't like being sent to another site. \textit{User never found a non-logged in option for saving results, which was to copy the link}
+  \end{itemize}
+\end{itemize}
+
+\section{Prototype - Wireframe}
+
+- common route selection
+- route optimization
+  - avoid snow
+  - avoid tolls
+  - avoid borders
+- viewing stops
+  - filter category
+  - filter number of reviews
+  - filter average rating
+  - filter cost
+- upload to phone
+
 \end{document}
